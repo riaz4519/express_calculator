@@ -336,6 +336,10 @@ $(document).ready( function() {
 
        var listening = parseInt($("input[name='group4']:checked").val());
 
+       if (isNaN(listening)){
+           listening = 0;
+       }
+
        if ($('.spouse').hasClass('spouse-remove')){
 
            $('.english-listening-value').text(listening);
@@ -360,7 +364,7 @@ $(document).ready( function() {
            }
 
            $('.english-listening-value').text(listening);
-           scoreBoard();
+           //scoreBoard();
 
 
        }
@@ -379,10 +383,56 @@ $(document).ready( function() {
    $('.english-listening').on('click',function () {
 
        official_english_listening();
-       
+
    });
 
    /*end english listen*/
+
+
+    function official_english_reading(){
+
+        var reading = parseInt($("input[name='group5']:checked").val());
+
+        if (isNaN(reading)){
+            reading = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.english-reading-value').text(reading);
+
+
+        }
+        else{
+            if (reading == 9 ){
+                reading = 8;
+            }
+            else if(reading == 17){
+                reading = 16;
+            }
+            else if(reading == 23){
+                reading = 22;
+            }
+            else if(reading == 31){
+                reading = 29;
+            }
+            else if(reading == 34){
+                reading = 32;
+            }
+
+            $('.english-reading-value').text(reading);
+            //scoreBoard();
+
+
+        }
+
+        scoreBoard();
+
+
+
+
+
+    }
 
     /*english reading*/
 
@@ -390,12 +440,57 @@ $(document).ready( function() {
 
 
 
-        $('.english-reading-value').text($(this).val());
-        scoreBoard();
+       official_english_reading();
 
     });
 
     /*end english reading*/
+
+
+    function official_english_writing(){
+
+        var writing = parseInt($("input[name='group6']:checked").val());
+
+        if (isNaN(writing)){
+            writing = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.english-writing-value').text(writing);
+
+
+        }
+        else{
+            if (writing == 9 ){
+                writing = 8;
+            }
+            else if(writing == 17){
+                writing = 16;
+            }
+            else if(writing == 23){
+                writing = 22;
+            }
+            else if(writing == 31){
+                writing = 29;
+            }
+            else if(writing == 34){
+                writing = 32;
+            }
+
+            $('.english-writing-value').text(writing);
+            //scoreBoard();
+
+
+        }
+
+        scoreBoard();
+
+
+
+
+
+    }
 
     /*english writing*/
 
@@ -403,12 +498,57 @@ $(document).ready( function() {
 
 
 
-        $('.english-writing-value').text($(this).val());
-        scoreBoard();
+        official_english_writing();
 
     });
 
     /*end english writing*/
+
+
+    function official_english_speaking(){
+
+        var speaking = parseInt($("input[name='group7']:checked").val());
+
+        if (isNaN(speaking)){
+            speaking = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.english-speaking-value').text(speaking);
+
+
+        }
+        else{
+            if (speaking == 9 ){
+                speaking = 8;
+            }
+            else if(speaking== 17){
+                speaking = 16;
+            }
+            else if(speaking == 23){
+                speaking = 22;
+            }
+            else if(speaking == 31){
+                speaking = 29;
+            }
+            else if(speaking == 34){
+                speaking = 32;
+            }
+
+            $('.english-speaking-value').text(speaking);
+            //scoreBoard();
+
+
+        }
+
+        scoreBoard();
+
+
+
+
+
+    }
 
     /*english speaking*/
 
@@ -416,8 +556,7 @@ $(document).ready( function() {
 
 
 
-        $('.english-speaking-value').text($(this).val());
-        scoreBoard();
+       official_english_speaking();
 
     });
 
@@ -426,18 +565,70 @@ $(document).ready( function() {
 
 
 
+
+    function second_french_listening() {
+
+        var listening = parseInt($("input[name='group8']:checked").val());
+
+        if (isNaN(listening)){
+            listening = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.french-listening-value').text(listening);
+
+
+        }
+        else{
+
+            $('.french-listening-value').text(listening);
+            //scoreBoard();
+        }
+
+        scoreBoard();
+
+
+
+
+    }
+
     /*french listen*/
 
     $('.french-listening').on('click',function () {
 
-
-
-        $('.french-listening-value').text($(this).val());
-        scoreBoard();
-
+        second_french_listening();
     });
 
     /*end french listen*/
+
+
+    function second_french_reading() {
+
+        var reading = parseInt($("input[name='group9']:checked").val());
+
+        if (isNaN(reading)){
+            reading = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.french-reading-value').text(reading);
+
+
+        }
+        else{
+
+            $('.french-reading-value').text(reading);
+            //scoreBoard();
+        }
+
+        scoreBoard();
+
+
+
+
+    }
 
     /*french reading*/
 
@@ -445,12 +636,39 @@ $(document).ready( function() {
 
 
 
-        $('.french-reading-value').text($(this).val());
-        scoreBoard();
+        second_french_reading();
 
     });
 
     /*end french reading*/
+
+
+    function second_french_writing() {
+
+        var writing = parseInt($("input[name='group10']:checked").val());
+
+        if (isNaN(writing)){
+            writing = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.french-writing-value').text(writing);
+
+
+        }
+        else{
+
+            $('.french-writing-value').text(writing);
+            //scoreBoard();
+        }
+
+        scoreBoard();
+
+
+
+
+    }
 
     /*french writing*/
 
@@ -458,12 +676,39 @@ $(document).ready( function() {
 
 
 
-        $('.french-writing-value').text($(this).val());
-        scoreBoard();
+       second_french_writing();
 
     });
 
     /*end french writing*/
+
+
+    function second_french_speaking() {
+
+        var speaking = parseInt($("input[name='group11']:checked").val());
+
+        if (isNaN(speaking)){
+            speaking = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.french-speaking-value').text(speaking);
+
+
+        }
+        else{
+
+            $('.french-speaking-value').text(speaking);
+            //scoreBoard();
+        }
+
+        scoreBoard();
+
+
+
+
+    }
 
     /*french speaking*/
 
@@ -471,9 +716,7 @@ $(document).ready( function() {
 
 
 
-        $('.french-speaking-value').text($(this).val());
-        scoreBoard();
-
+      second_french_speaking();
     });
 
     /*end french speaking*/
@@ -500,6 +743,22 @@ $(document).ready( function() {
 
             level_of_education();
 
+            /*listening*/
+
+            official_english_listening();
+
+            /*reading*/
+
+            official_english_reading();
+
+            /*writing*/
+            official_english_writing();
+
+            /*speaking*/
+            official_english_speaking();
+
+
+
         }else{
 
 
@@ -513,6 +772,21 @@ $(document).ready( function() {
             age_function();
             /*level of education*/
             level_of_education();
+
+            /*listening*/
+
+            official_english_listening();
+
+            /*reading*/
+
+            official_english_reading();
+
+            /*writing*/
+            official_english_writing();
+            /*speaking*/
+            official_english_speaking();
+
+
 
         }
 
