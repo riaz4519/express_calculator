@@ -7,12 +7,6 @@ $(document).ready( function() {
 
     /*age value change according to marital status*/
 
-
-        $('.married-status').on('change',function () {
-
-
-        });
-
     /*end age value change*/
 
     function age_function() {
@@ -272,8 +266,6 @@ $(document).ready( function() {
 
     $('.input-range').on('change',function () {
 
-       
-
         age_function();
 
     });
@@ -282,8 +274,6 @@ $(document).ready( function() {
 
    $('.education').on('click',function () {
 
-
-
        level_of_education();
 
    });
@@ -291,8 +281,12 @@ $(document).ready( function() {
 
    function level_of_education() {
 
-
        var education = parseInt($("input[name='group3']:checked").val());
+
+
+       if (isNaN(education)){
+           education = 0;
+       }
 
 
        if ($('.spouse').hasClass('spouse-remove')) {
@@ -322,6 +316,7 @@ $(document).ready( function() {
                education = 140;
            }
 
+
            $('.education-value').text(education);
        }
        scoreBoard();
@@ -333,15 +328,58 @@ $(document).ready( function() {
 
    }
 
+
+
+   /*function for official language pro*/
+
+   function official_english_listening() {
+
+       var listening = parseInt($("input[name='group4']:checked").val());
+
+       if ($('.spouse').hasClass('spouse-remove')){
+
+           $('.english-listening-value').text(listening);
+
+
+       }
+       else{
+           if (listening == 9 ){
+               listening = 8;
+           }
+           else if(listening == 17){
+               listening = 16;
+           }
+           else if(listening == 23){
+               listening = 22;
+           }
+           else if(listening == 31){
+               listening = 29;
+           }
+           else if(listening == 34){
+               listening = 32;
+           }
+
+           $('.english-listening-value').text(listening);
+           scoreBoard();
+
+
+       }
+
+       scoreBoard();
+
+
+
+
+   }
+
+   /*end of official language pro*/
+
    /*english listen*/
 
    $('.english-listening').on('click',function () {
 
-
-
-       $('.english-listening-value').text($(this).val());
-       scoreBoard();
-
+       official_english_listening();
+       
    });
 
    /*end english listen*/
