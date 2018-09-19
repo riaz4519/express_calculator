@@ -91,7 +91,7 @@
                         <div class="col s10">
                             <div class="range-field"  >
                                 <small style="color: #9e9e9e;">Age:</small>
-                                <input type="range" class="input-range take-value " min="0" max="100" value="17"/>
+                                <input type="range" class="input-range take-value age-field" min="0" max="100" value="17"/>
                             </div>
 
 
@@ -1693,8 +1693,23 @@
 
 
 
+
+
         </form>
 
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
 
 
 
@@ -1708,5 +1723,24 @@
 
 <script src="js/crs.js"></script>
 <script src="js/range-slider.js"></script>
+
+<script>
+
+    (function ($) {
+        $(function () {
+
+            //initialize all modals
+            $('.modal').modal();
+
+            //now you can open modal from code
+           // $('#modal1').modal('open');
+
+            //or by click on trigger
+            $('.trigger-modal').modal();
+
+        }); // end of document ready
+    })(jQuery);
+
+</script>
 </body>
 </html>

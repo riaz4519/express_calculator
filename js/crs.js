@@ -5,136 +5,276 @@
 $(document).ready( function() {
 
 
-    $('.input-range').on('change',function () {
-
-        var age = $(this).val();
+    /*age value change according to marital status*/
 
 
-        if(age <=17){
+        $('.married-status').on('change',function () {
 
-            $('.show-points-age').text(0);
-            console.log('age');
 
+        });
+
+    /*end age value change*/
+
+    function age_function() {
+
+        var age = parseInt($('.age-field').val());
+
+        /*with out spouse*/
+        if ($('.spouse').hasClass('spouse-remove')) {
+
+
+            if (age <= 17) {
+
+                $('.show-points-age').text(0);
+                console.log('age');
+
+            }
+            else if (age == 18) {
+
+                $('.show-points-age').text(99);
+                console.log('age');
+
+            }
+            else if (age == 19) {
+
+                $('.show-points-age').text(105);
+                console.log('age');
+
+            }
+            else if (age >= 20 && age <= 29) {
+
+                $('.show-points-age').text(110);
+                console.log('age');
+
+            }
+            else if (age == 30) {
+
+                $('.show-points-age').text(105);
+                console.log('age');
+
+            }
+            else if (age == 31) {
+
+                $('.show-points-age').text(99);
+                console.log('age');
+
+            }
+            else if (age == 32) {
+
+                $('.show-points-age').text(94);
+                console.log('age');
+
+            } else if (age == 33) {
+
+                $('.show-points-age').text(88);
+                console.log('age');
+
+            } else if (age == 34) {
+
+                $('.show-points-age').text(83);
+                console.log('age');
+
+            }
+            else if (age == 35) {
+
+                $('.show-points-age').text(77);
+                console.log('age');
+
+            }
+            else if (age == 36) {
+
+                $('.show-points-age').text(72);
+                console.log('age');
+
+            }
+            else if (age == 37) {
+
+                $('.show-points-age').text(66);
+                console.log('age');
+
+            }
+            else if (age == 38) {
+
+                $('.show-points-age').text(61);
+                console.log('age');
+
+            }
+            else if (age == 39) {
+
+                $('.show-points-age').text(55);
+                console.log('age');
+
+            }
+            else if (age == 40) {
+
+                $('.show-points-age').text(50);
+                console.log('age');
+
+            }
+            else if (age == 41) {
+
+                $('.show-points-age').text(39);
+                console.log('age');
+
+            }
+            else if (age == 42) {
+
+                $('.show-points-age').text(28);
+                console.log('age');
+
+            }
+            else if (age == 43) {
+
+                $('.show-points-age').text(17);
+                console.log('age');
+
+            }
+            else if (age == 44) {
+
+                $('.show-points-age').text(6);
+                console.log('age');
+
+            }
+            else if (age >= 45) {
+
+                $('.show-points-age').text(0);
+                console.log('age');
+
+            }
         }
-        else if(age == 18){
+        /*with spouse*/
+        else{
 
-            $('.show-points-age').text(99);
-            console.log('age');
+            if (age <= 17) {
 
-        }
-        else if(age == 19){
+                $('.show-points-age').text(0);
+                console.log('age');
 
-            $('.show-points-age').text(105);
-            console.log('age');
+            }
+            else if (age == 18) {
 
-        }
-        else if(age >= 20 && age <=29){
+                $('.show-points-age').text(90);
+                console.log('age');
 
-            $('.show-points-age').text(110);
-            console.log('age');
+            }
+            else if (age == 19) {
 
-        }
-        else if(age == 30){
+                $('.show-points-age').text(95);
+                console.log('age');
 
-            $('.show-points-age').text(105);
-            console.log('age');
+            }
+            else if (age >= 20 && age <= 29) {
 
-        }
-        else if(age == 31){
+                $('.show-points-age').text(100);
+                console.log('age');
 
-            $('.show-points-age').text(99);
-            console.log('age');
+            }
+            else if (age == 30) {
 
-        }
-        else if(age == 32){
+                $('.show-points-age').text(95);
+                console.log('age');
 
-            $('.show-points-age').text(94);
-            console.log('age');
+            }
+            else if (age == 31) {
 
-        }  else if(age == 33){
+                $('.show-points-age').text(90);
+                console.log('age');
 
-            $('.show-points-age').text(88);
-            console.log('age');
+            }
+            else if (age == 32) {
 
-        }  else if(age == 34){
+                $('.show-points-age').text(85);
+                console.log('age');
 
-            $('.show-points-age').text(83);
-            console.log('age');
+            } else if (age == 33) {
 
-        }
-        else if(age == 35){
+                $('.show-points-age').text(80);
+                console.log('age');
 
-            $('.show-points-age').text(77);
-            console.log('age');
+            } else if (age == 34) {
 
-        }
-        else if(age == 36){
+                $('.show-points-age').text(75);
+                console.log('age');
 
-            $('.show-points-age').text(72);
-            console.log('age');
+            }
+            else if (age == 35) {
 
-        }
-        else if(age == 37){
+                $('.show-points-age').text(70);
+                console.log('age');
 
-            $('.show-points-age').text(66);
-            console.log('age');
+            }
+            else if (age == 36) {
 
-        }
-        else if(age == 38){
+                $('.show-points-age').text(65);
+                console.log('age');
 
-            $('.show-points-age').text(61);
-            console.log('age');
+            }
+            else if (age == 37) {
 
-        }
-        else if(age == 39){
+                $('.show-points-age').text(60);
+                console.log('age');
 
-            $('.show-points-age').text(55);
-            console.log('age');
+            }
+            else if (age == 38) {
 
-        }
-        else if(age == 40){
+                $('.show-points-age').text(55);
+                console.log('age');
 
-            $('.show-points-age').text(50);
-            console.log('age');
+            }
+            else if (age == 39) {
 
-        }
-        else if(age == 41){
+                $('.show-points-age').text(50);
+                console.log('age');
 
-            $('.show-points-age').text(39);
-            console.log('age');
+            }
+            else if (age == 40) {
 
-        }
-        else if(age == 42){
+                $('.show-points-age').text(45);
+                console.log('age');
 
-            $('.show-points-age').text(28);
-            console.log('age');
+            }
+            else if (age == 41) {
 
-        }
-        else if(age == 43){
+                $('.show-points-age').text(35);
+                console.log('age');
 
-            $('.show-points-age').text(17);
-            console.log('age');
+            }
+            else if (age == 42) {
 
-        }
-        else if(age == 44){
+                $('.show-points-age').text(25);
+                console.log('age');
 
-            $('.show-points-age').text(6);
-            console.log('age');
+            }
+            else if (age == 43) {
 
-        }
-        else if(age >= 45){
+                $('.show-points-age').text(15);
+                console.log('age');
 
-            $('.show-points-age').text(0);
-            console.log('age');
+            }
+            else if (age == 44) {
+
+                $('.show-points-age').text(5);
+                console.log('age');
+
+            }
+            else if (age >= 45) {
+
+                $('.show-points-age').text(0);
+                console.log('age');
+
+            }
 
         }
         scoreBoard();
 
+    }
 
 
+    $('.input-range').on('change',function () {
 
+       
 
-
+        age_function();
 
     });
 
@@ -142,11 +282,56 @@ $(document).ready( function() {
 
    $('.education').on('click',function () {
 
-       $('.education-value').text($(this).val());
+
+
+       level_of_education();
+
+   });
+
+
+   function level_of_education() {
+
+
+       var education = parseInt($("input[name='group3']:checked").val());
+
+
+       if ($('.spouse').hasClass('spouse-remove')) {
+
+           $('.education-value').text(education);
+
+       }else{
+           if (education == 30){
+               education = 28;
+           }
+           else if (education == 90){
+               education = 84;
+           }
+           else if (education == 98){
+               education = 91;
+           }
+           else if (education == 120){
+               education = 112;
+           }
+           else if (education == 128){
+               education = 119;
+           }
+           else if (education == 135){
+               education = 126;
+           }
+           else if (education == 150){
+               education = 140;
+           }
+
+           $('.education-value').text(education);
+       }
        scoreBoard();
 
 
-   });
+
+
+
+
+   }
 
    /*english listen*/
 
@@ -266,15 +451,16 @@ $(document).ready( function() {
         if ($('.spouse').hasClass('spouse-remove')){
 
 
-
-
-
-
             $('.spouse').removeClass('spouse-remove');
             $('.spouse-not-selected').addClass('spouse-remove');
             var add_spouse = total_score + spouse_total;
 
             $('.score').text(add_spouse);
+            age_function();
+
+            /*education change*/
+
+            level_of_education();
 
         }else{
 
@@ -285,6 +471,10 @@ $(document).ready( function() {
 
             var remove_spouse = total_score - spouse_total;
             $('.score').text(remove_spouse);
+
+            age_function();
+            /*level of education*/
+            level_of_education();
 
         }
 
