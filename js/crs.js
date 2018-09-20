@@ -757,6 +757,9 @@ $(document).ready( function() {
             /*speaking*/
             official_english_speaking();
 
+            /*canada work ex*/
+            canada_work_ex();
+
 
 
         }else{
@@ -785,6 +788,8 @@ $(document).ready( function() {
             official_english_writing();
             /*speaking*/
             official_english_speaking();
+            /*canada work ex*/
+            canada_work_ex();
 
 
 
@@ -799,26 +804,91 @@ $(document).ready( function() {
 
 
 
+
+
+    function canada_work_ex() {
+
+        var canada_work = parseInt($("input[name='group12']:checked").val());
+
+        if (isNaN(canada_work)){
+            canada_work = 0;
+        }
+
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            $('.work-ex-canada-value').text(canada_work);
+
+
+        }
+        else{
+
+            if(canada_work == 40){
+                canada_work = 35;
+            }
+            else if(canada_work == 53){
+                canada_work = 46;
+            }
+            else if(canada_work == 64){
+                canada_work = 56;
+
+            }
+            else if(canada_work == 72){
+                canada_work = 63;
+
+            }
+            else if(canada_work == 80){
+                canada_work = 70;
+
+            }
+
+            $('.work-ex-canada-value').text(canada_work);
+            //scoreBoard();
+        }
+
+        scoreBoard();
+        foreign_work_ex();
+
+
+
+
+    }
+
     /*work ex canada*/
 
     $('.work-ex-canada').on('click',function () {
 
-        $('.work-ex-canada-value').text($(this).val());
-        scoreBoard();
+       canada_work_ex();
 
     });
 
     /*end work ex canada*/
 
-    /*work ex foreign*/
 
-    $('.foreign-ex').on('click',function () {
 
-        // $('.work-ex-canada-value').text($(this).val());
-        if ($(this).val() == 2){
+    function foreign_work_ex(){
 
-            var canada_ex = parseInt($('.work-ex-canada-value').text());
-            console.log(canada_ex);
+        var canada_ex = parseInt($('.work-ex-canada-value').text());
+       var foreign_work = parseInt($("input[name='group13']:checked").val());
+
+       var ielts_avg  =  0;
+
+       $('.english-pro .score-board').each(function () {
+
+
+           ielts_avg = ielts_avg + parseInt($(this).text());
+
+           
+       });
+       ielts_avg = ielts_avg /4;
+       console.log(ielts_avg);
+           
+
+
+
+        if (foreign_work == 2){
+
+
+
             if(canada_ex == 80 ){
                 $('.foreign-ex-value').text(25);
 
@@ -833,7 +903,7 @@ $(document).ready( function() {
             else if(canada_ex ==  64){
                 $('.foreign-ex-value').text(25);
             }
-            else if(canada_ex ==  74){
+            else if(canada_ex ==  72){
                 $('.foreign-ex-value').text(25);
             }
             else if(canada_ex ==  0){
@@ -844,12 +914,10 @@ $(document).ready( function() {
 
 
 
+        }else if(foreign_work == 3){
 
 
 
-        }else if($(this).val() == 3){
-
-            var canada_ex = parseInt($('.work-ex-canada-value').text());
             console.log(canada_ex);
             if(canada_ex == 80 ){
                 $('.foreign-ex-value').text(50);
@@ -863,7 +931,7 @@ $(document).ready( function() {
             else if(canada_ex ==  64){
                 $('.foreign-ex-value').text(50);
             }
-            else if(canada_ex ==  74){
+            else if(canada_ex ==  72){
                 $('.foreign-ex-value').text(50);
             }
             else if(canada_ex ==  0){
@@ -871,8 +939,23 @@ $(document).ready( function() {
             }
 
         }
+        else if (foreign_work == 1){
+            $('.foreign-ex-value').text(0);
+        }
 
         scoreBoard();
+
+
+    }
+
+    /*work ex foreign*/
+
+    $('.foreign-ex').on('click',function () {
+
+        foreign_work_ex();
+
+
+
 
     });
 
@@ -933,7 +1016,7 @@ $(document).ready( function() {
     $('.spouse-education').on('click',function () {
 
         $('.spouse-education-value').text($(this).val());
-        scoreBoard();
+        //scoreBoard();
         marriedChange();
 
     });
@@ -946,7 +1029,7 @@ $(document).ready( function() {
     $('.spouse-ex-canada').on('click',function () {
 
         $('.spouse-ex-canada-value').text($(this).val());
-        scoreBoard();
+        //scoreBoard();
         marriedChange();
 
     });
@@ -955,7 +1038,7 @@ $(document).ready( function() {
     $('.spouse-listening').on('click',function () {
 
         $('.spouse-listening-value').text($(this).val());
-        scoreBoard();
+       // scoreBoard();
         marriedChange();
 
     });
@@ -966,7 +1049,7 @@ $(document).ready( function() {
     $('.spouse-reading').on('click',function () {
 
         $('.spouse-reading-value').text($(this).val());
-        scoreBoard();
+        //scoreBoard();
         marriedChange();
 
     });
@@ -977,7 +1060,7 @@ $(document).ready( function() {
     $('.spouse-writing').on('click',function () {
 
         $('.spouse-writing-value').text($(this).val());
-        scoreBoard();
+        //scoreBoard();
         marriedChange();
 
     });
@@ -987,7 +1070,7 @@ $(document).ready( function() {
     $('.spouse-speaking').on('click',function () {
 
         $('.spouse-speaking-value').text($(this).val());
-        scoreBoard();
+        //scoreBoard();
         marriedChange();
 
     });
@@ -1006,10 +1089,12 @@ $(document).ready( function() {
         $('.spouse-area .score-board').each(function () {
 
            married_sum = married_sum + parseInt($(this).text());
+           console.log($(this).text());
 
         })
 
         $('.spouse-subtotal').text(married_sum);
+        scoreBoard();
 
 
 

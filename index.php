@@ -188,7 +188,7 @@
             <!--english-->
 
             <h4 class="truncate section">English:</h4>
-            <div class=" z-depth-1 grey lighten-5 hoverable" >
+            <div class=" z-depth-1 grey lighten-5 hoverable english-pro" >
 
                 <div class="row">
 
@@ -968,54 +968,54 @@
                             <small style="color: #9e9e9e;">Education</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="0" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="0" type="radio"  />
                                     <span>Less than Secondary school(high school)credential</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="2" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="2" type="radio"  />
                                     <span>Secondary school (high school) credential</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="6" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="6" type="radio"  />
                                     <span>One-year post-secondary program credential</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="7" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="7" type="radio"  />
                                     <span>Two-year post-secondary program credential</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="8" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="8" type="radio"  />
                                     <span>Post-secondary program credential of three years or longer</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="9" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="9" type="radio"  />
                                     <span>Two or more post-secondary credentials and at least one of them form a post-secondary program of
                                     three years or longer</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="10" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="10" type="radio"  />
                                     <span>University Master's credential or an entry-to-practice professional degree</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-education" name="group19" value="10" type="radio"  />
+                                    <input class="with-gap spouse-education" name="group40" value="10" type="radio"  />
                                     <span>University-level credential at the Doctoral level</span>
                                 </label>
                             </p>
@@ -1402,7 +1402,7 @@
 
                     </div>
                     <div class="col s2 center-align-position">
-                        <b><span class="spouse-subtotal score-board " >0</span></b>
+                        <b><span class="spouse-subtotal" >0</span></b>
 
                     </div>
 
