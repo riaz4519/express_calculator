@@ -370,6 +370,7 @@ $(document).ready( function() {
        }
 
        scoreBoard();
+       foreign_work_ex();
 
 
 
@@ -427,6 +428,7 @@ $(document).ready( function() {
         }
 
         scoreBoard();
+        foreign_work_ex();
 
 
 
@@ -485,6 +487,7 @@ $(document).ready( function() {
         }
 
         scoreBoard();
+        foreign_work_ex();
 
 
 
@@ -543,6 +546,7 @@ $(document).ready( function() {
         }
 
         scoreBoard();
+        foreign_work_ex();
 
 
 
@@ -869,8 +873,17 @@ $(document).ready( function() {
 
         var canada_ex = parseInt($('.work-ex-canada-value').text());
        var foreign_work = parseInt($("input[name='group13']:checked").val());
+       console.log(canada_ex);
+
+       var work_total  = 0;
+
+
+
+
 
        var ielts_avg  =  0;
+
+
 
        $('.english-pro .score-board').each(function () {
 
@@ -881,67 +894,198 @@ $(document).ready( function() {
        });
        ielts_avg = ielts_avg /4;
        console.log(ielts_avg);
-           
+
+       if (foreign_work == 1){
+
+           $('.language-foreign').text(0);
+           $('.canada-foreign').text(0);
+
+       }
 
 
-
-        if (foreign_work == 2){
-
+       /*
 
 
-            if(canada_ex == 80 ){
-                $('.foreign-ex-value').text(25);
+        }*/
+
+        if( canada_ex > 40 && ielts_avg < 16) {
+
+            if (foreign_work == 2) {
+                $('.canada-foreign').text(25);
 
 
             }
-            else if(canada_ex ==  40){
-                $('.foreign-ex-value').text(13);
+            else if (foreign_work == 3) {
+                $('.canada-foreign').text(50);
+
             }
-            else if(canada_ex ==  53){
-                $('.foreign-ex-value').text(25);
-            }
-            else if(canada_ex ==  64){
-                $('.foreign-ex-value').text(25);
-            }
-            else if(canada_ex ==  72){
-                $('.foreign-ex-value').text(25);
-            }
-            else if(canada_ex ==  0){
-                $('.foreign-ex-value').text(0);
-            }
+        }
+
+        else if (canada_ex == 40 && ielts_avg < 16){
+
+            if (foreign_work == 2){
+                $('.canada-foreign').text(13);
 
 
-
-
-
-        }else if(foreign_work == 3){
-
-
-
-            console.log(canada_ex);
-            if(canada_ex == 80 ){
-                $('.foreign-ex-value').text(50);
             }
-            else if(canada_ex ==  40){
-                $('.foreign-ex-value').text(25);
-            }
-            else if(canada_ex ==  53){
-                $('.foreign-ex-value').text(50);
-            }
-            else if(canada_ex ==  64){
-                $('.foreign-ex-value').text(50);
-            }
-            else if(canada_ex ==  72){
-                $('.foreign-ex-value').text(50);
-            }
-            else if(canada_ex ==  0){
-                $('.foreign-ex-value').text(0);
+            else  if (foreign_work == 3){
+                $('.canada-foreign').text(25);
+
             }
 
         }
-        else if (foreign_work == 1){
-            $('.foreign-ex-value').text(0);
+
+
+
+
+
+
+       else if( canada_ex == 0 && ielts_avg >= 16 && ielts_avg <= 28){
+
+            if (foreign_work == 2){
+                $('.language-foreign').text(13);
+
+
+            }
+            else  if (foreign_work == 3){
+                $('.language-foreign').text(25);
+
+            }
+
         }
+        else if( canada_ex == 0 && ielts_avg >= 29 && ielts_avg <= 34){
+
+            if (foreign_work == 2){
+                $('.language-foreign').text(25);
+
+
+            }
+            else  if (foreign_work == 3){
+                $('.language-foreign').text(50);
+
+            }
+
+        }
+
+        else if (canada_ex == 40 && ielts_avg >= 16 && ielts_avg <= 28 ){
+
+
+            console.log('fas');
+
+            if (foreign_work == 2){
+                $('.language-foreign').text(13);
+                $('.canada-foreign').text(13);
+
+
+            }
+            else  if (foreign_work == 3){
+                $('.language-foreign').text(25);
+                $('.canada-foreign').text(25);
+
+            }
+
+        }
+
+
+        else if (canada_ex == 40 && ielts_avg >= 29 && ielts_avg <= 34 ){
+
+            console.log('fus');
+
+            if (foreign_work == 2){
+                $('.language-foreign').text(25);
+                $('.canada-foreign').text(25);
+
+
+            }
+            else  if (foreign_work == 3){
+                $('.language-foreign').text(50);
+                $('.canada-foreign').text(50);
+
+            }
+
+        }
+
+
+        else if( canada_ex > 40 && ielts_avg >= 16 && ielts_avg <= 28){
+
+            if (foreign_work == 2){
+                $('.language-foreign').text(13);
+                $('.canada-foreign').text(25);
+
+
+            }
+            else  if (foreign_work == 3){
+                $('.language-foreign').text(25);
+                $('.canada-foreign').text(50);
+
+            }
+
+        }
+
+
+        else if( canada_ex > 40 && ielts_avg >= 29 && ielts_avg <= 34){
+
+            if (foreign_work == 2){
+                $('.language-foreign').text(25);
+                $('.canada-foreign').text(25);
+
+
+            }
+            else  if (foreign_work == 3){
+                $('.language-foreign').text(50);
+                $('.canada-foreign').text(50);
+
+            }
+
+        }
+        else{
+
+            $('.language-foreign').text(0);
+            $('.canada-foreign').text(0);
+
+        }
+
+        /*trade*/
+
+        var trade_value = $('input[name="group19"]:checked').val();
+        if(trade_value != null){
+
+            if (trade_value == 2){
+
+                if (ielts_avg >= 8 && ielts_avg <= 15){
+                    $('.trade-certificate').text(25);
+                    console.log('fsfsfsdf');
+                }
+                else if(ielts_avg >= 9 && ielts_avg <= 34){
+                    $('.trade-certificate').text(50);
+                }
+
+
+            }
+            else{
+                $('.trade-certificate').text(0);
+            }
+
+
+        }
+
+
+
+
+
+
+        $('.skill-transfer .score-board-trans').each(function () {
+
+            work_total = work_total + parseInt($(this).text());
+
+
+        });
+
+        if (work_total >100){
+            work_total = 100;
+        }
+
+        $('.trans-sub').text(work_total);
 
         scoreBoard();
 
@@ -964,9 +1108,26 @@ $(document).ready( function() {
 
     /*provincial*/
 
+
+
     $('.provincial').on('click',function () {
 
+
         $('.provincial-value').text($(this).val());
+
+        var additional_total = 0;
+
+        $('.score-additional').each(function () {
+
+            additional_total = additional_total + parseInt($(this).text());
+        })
+
+        if (additional_total > 600){
+            additional_total = 600;
+        }
+
+        $('.score-additional-total').text(additional_total);
+
         scoreBoard();
 
     });
@@ -978,6 +1139,20 @@ $(document).ready( function() {
     $('.offer-em-canada').on('click',function () {
 
         $('.offer-em-canada-value').text($(this).val());
+
+        var additional_total = 0;
+
+        $('.score-additional').each(function () {
+
+            additional_total = additional_total + parseInt($(this).text());
+        })
+
+        if (additional_total > 600){
+            additional_total = 600;
+        }
+
+        $('.score-additional-total').text(additional_total);
+
         scoreBoard();
 
     });
@@ -990,6 +1165,20 @@ $(document).ready( function() {
     $('.education-canada').on('click',function () {
 
         $('.education-canada-value').text($(this).val());
+
+        var additional_total = 0;
+
+        $('.score-additional').each(function () {
+
+            additional_total = additional_total + parseInt($(this).text());
+        })
+
+        if (additional_total > 600){
+            additional_total = 600;
+        }
+
+        $('.score-additional-total').text(additional_total);
+
         scoreBoard();
 
     });
@@ -1003,6 +1192,21 @@ $(document).ready( function() {
     $('.sibling-canada').on('click',function () {
 
         $('.sibling-canada-value').text($(this).val());
+
+
+        var additional_total = 0;
+
+        $('.score-additional').each(function () {
+
+            additional_total = additional_total + parseInt($(this).text());
+        })
+
+        if (additional_total > 600){
+            additional_total = 600;
+        }
+
+        $('.score-additional-total').text(additional_total);
+
         scoreBoard();
 
     });

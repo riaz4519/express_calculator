@@ -790,7 +790,8 @@
 
             <!--work-->
 
-            <div class=" z-depth-1 grey lighten-5 hoverable" ><div class="row">
+            <div class=" z-depth-1 grey lighten-5 hoverable" >
+                <div class="row ">
 
                     <!--canadian-->
 
@@ -896,14 +897,14 @@
                             <small style="color: #9e9e9e;">Canadian trade certificate</small>
                             <p>
                                 <label>
-                                    <input class="with-gap" name="group19" type="radio"  />
+                                    <input class="with-gap foreign-ex" name="group19" value="1" type="radio"  />
                                     <span>None </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap" name="group19" type="radio"  />
+                                    <input class="with-gap foreign-ex " name="group19" value="2" type="radio"  />
                                     <span> Valid Canadian trade certificate</span>
                                 </label>
                             </p>
@@ -912,7 +913,7 @@
                         </div>
                         <div class="col s2">
 
-                            <b><span class="  score-board">0</span></b>
+                            <b><span class="canadian-trade score-board">0</span></b>
 
 
                         </div>
@@ -1430,7 +1431,7 @@
 
 
             <h5 class="truncate section">Category C: Skill transferability</h5>
-            <div class=" z-depth-1 grey lighten-5 hoverable" >
+            <div class=" z-depth-1 grey lighten-5 hoverable skill-transfer" >
 
                 <div class="row">
 
@@ -1440,7 +1441,7 @@
 
                         </div>
                         <div class="col s2">
-                            0
+                            <b><span class="score-board-trans language-education" >0</span></b>
                         </div>
 
                     </div>
@@ -1450,7 +1451,7 @@
 
                         </div>
                         <div class="col s2">
-                            0
+                            <b><span class="score-board-trans canada-ex-edu" >0</span></b>
                         </div>
 
                     </div>
@@ -1460,7 +1461,7 @@
 
                         </div>
                         <div class="col s2">
-                            0
+                            <b><span class="score-board-trans language-foreign" >0</span></b>
                         </div>
 
                     </div>
@@ -1470,7 +1471,7 @@
 
                         </div>
                         <div class="col s2">
-                            0
+                            <b><span class="score-board-trans canada-foreign" >0</span></b>
                         </div>
 
                     </div>
@@ -1482,7 +1483,7 @@
 
                         </div>
                         <div class="col s2">
-                            0
+                            <b><span class="score-board-trans trade-certificate" >0</span></b>
                         </div>
 
                     </div>
@@ -1496,7 +1497,7 @@
 
                     </div>
                     <div class="col s2">
-                        0
+                        <b><span class="score-board trans-sub" >0</span></b>
 
                     </div>
 
@@ -1525,7 +1526,7 @@
                             <small style="color: #9e9e9e;">Provincial nomincation</small>
                             <p>
                                 <label>
-                                    <input class="with-gap provincial " name="group15"  value="0" type="radio"  />
+                                    <input class="with-gap provincial" name="group15"  value="0" type="radio"  />
                                     <span>None </span>
                                 </label>
                             </p>
@@ -1543,7 +1544,7 @@
 
                         </div>
                         <div class="col s2 ">
-                            <b><span class="provincial-value  score-board">0</span></b>
+                            <b><span class="provincial-value score-additional">0</span></b>
 
 
                         </div>
@@ -1577,7 +1578,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="offer-em-canada-value score-board">0</span></b>
+                            <b><span class="offer-em-canada-value score-additional">0</span></b>
 
 
                         </div>
@@ -1612,7 +1613,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="education-canada-value score-board">0</span></b>
+                            <b><span class="education-canada-value score-additional">0</span></b>
 
 
                         </div>
@@ -1638,13 +1639,9 @@
                                 </label>
                             </p>
 
-
-
-
-
                         </div>
                         <div class="col s2">
-                            <b><span class="sibling-canada-value score-board">0</span></b>
+                            <b><span class="sibling-canada-value score-additional">0</span></b>
 
 
                         </div>
@@ -1665,7 +1662,7 @@
                     </div>
                     <div class="col s2">
 
-                        <b><span class="additional-points">0</span></b>
+                        <b><span class="score-board score-additional-total">0</span></b>
 
 
                     </div>
