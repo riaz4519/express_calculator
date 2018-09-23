@@ -4,12 +4,16 @@
 
 $(document).ready( function() {
 
+  
+
 
     /*age value change according to marital status*/
 
     /*end age value change*/
 
     function age_function() {
+
+
 
         var age = parseInt($('.age-field').val());
 
@@ -276,6 +280,7 @@ $(document).ready( function() {
 
        level_of_education();
 
+
    });
 
 
@@ -320,6 +325,8 @@ $(document).ready( function() {
            $('.education-value').text(education);
        }
        scoreBoard();
+       education_language();
+       canadian_work_education();
 
 
 
@@ -852,6 +859,8 @@ $(document).ready( function() {
         scoreBoard();
         foreign_work_ex();
 
+        canadian_work_education();
+
 
 
 
@@ -863,6 +872,7 @@ $(document).ready( function() {
 
        canada_work_ex();
 
+
     });
 
     /*end work ex canada*/
@@ -873,25 +883,117 @@ $(document).ready( function() {
 
         var canada_ex = parseInt($('.work-ex-canada-value').text());
        var foreign_work = parseInt($("input[name='group13']:checked").val());
-       console.log(canada_ex);
+       console.log(foreign_work);
 
        var work_total  = 0;
-
-
-
-
 
        var ielts_avg  =  0;
 
 
 
+       /*for */
+
+       var under7 = 0;
+       var under9 = 0;
+       var under5 = 0;
+
+
        $('.english-pro .score-board').each(function () {
 
+           //ielts_avg = ielts_avg + parseInt($(this).text());
+           if (parseInt($(this).text()) >= 16 && parseInt($(this).text()) <= 28 ){
 
-           ielts_avg = ielts_avg + parseInt($(this).text());
+               under7++
+           }
+           else if (parseInt($(this).text()) >= 29 && parseInt($(this).text()) <= 34 ){
 
-           
+               under9++
+           }
+           if (parseInt($(this).text()) >= 6 && parseInt($(this).text()) <= 15){
+               under5++;
+           }
        });
+       console.log("fds"+under5);
+
+       if ($('input[name="group19"]:checked').val() == 2){
+
+
+          if (under5 + under7 + under9 == 4){
+              console.log('error2');
+
+              if (under5 >= 1){
+
+                  $('.trade-certificate').text(25);
+
+              }
+              else if (under7 >= 1 || under9 >=1){
+
+                  $('.trade-certificate').text(50);
+              }
+          }
+       }
+       else {
+           $('.trade-certificate').text(0);
+       }
+       console.log('fdsf'+under7);
+       console.log('fdsf'+under9);
+
+       var state_for_foreign_language = 0;
+       var state_for_foreign_trade = 0;
+
+
+
+
+    if ( under7 + under9 == 4){
+        console.log('foreign'+foreign_work);
+
+        if(under7 >=1){
+
+
+
+            if (foreign_work == 2){
+
+                $('.language-foreign').text(13);
+
+
+
+            }
+            else if (foreign_work == 3){
+                $('.language-foreign').text(25);
+
+            }
+            else{
+                $('.language-foreign').text(0)
+            }
+            state_for_foreign_language = 1
+            console.log(state_for_foreign_language);
+        }else{
+
+            if (foreign_work == 2){
+
+                $('.language-foreign').text(25);
+
+
+
+            }
+            else if (foreign_work == 3){
+                $('.language-foreign').text(50);
+
+            }
+            else{
+                $('.language-foreign').text(0)
+            }
+            state_for_foreign_language = 2;
+            console.log(state_for_foreign_language);
+        }
+
+    }else {
+        $('.language-foreign').text(0);
+    }
+
+
+
+
        ielts_avg = ielts_avg /4;
        console.log(ielts_avg);
 
@@ -940,7 +1042,7 @@ $(document).ready( function() {
 
 
 
-       else if( canada_ex == 0 && ielts_avg >= 16 && ielts_avg <= 28){
+     /*  else if( canada_ex == 0 && ielts_avg >= 16 && ielts_avg <= 28){
 
             if (foreign_work == 2){
                 $('.language-foreign').text(13);
@@ -965,7 +1067,7 @@ $(document).ready( function() {
 
             }
 
-        }
+        }*/
 
         else if (canada_ex == 40 && ielts_avg >= 16 && ielts_avg <= 28 ){
 
@@ -1038,16 +1140,16 @@ $(document).ready( function() {
             }
 
         }
-        else{
+      /*  else{
 
             $('.language-foreign').text(0);
             $('.canada-foreign').text(0);
 
-        }
+        }*/
 
         /*trade*/
 
-        var trade_value = $('input[name="group19"]:checked').val();
+  /*      var trade_value = $('input[name="group19"]:checked').val();
         if(trade_value != null){
 
             if (trade_value == 2){
@@ -1068,26 +1170,16 @@ $(document).ready( function() {
 
 
         }
+*/
 
 
 
 
 
 
-        $('.skill-transfer .score-board-trans').each(function () {
-
-            work_total = work_total + parseInt($(this).text());
-
-
-        });
-
-        if (work_total >100){
-            work_total = 100;
-        }
-
-        $('.trans-sub').text(work_total);
 
         scoreBoard();
+        education_language();
 
 
     }
@@ -1097,6 +1189,9 @@ $(document).ready( function() {
     $('.foreign-ex').on('click',function () {
 
         foreign_work_ex();
+
+
+
 
 
 
@@ -1277,15 +1372,128 @@ $(document).ready( function() {
         //scoreBoard();
         marriedChange();
 
+
     });
 
     /*spouse writing*/
 
 
+    /*Official language and level of education*/
+    function education_language() {
+
+        var education_for_c = parseInt($('.education-value').text());
+
+        var under7 = 0;
+        var under9 = 0;
+
+        $('.english-pro .score-board').each(function () {
+
+
+            if (parseInt($(this).text()) >= 16 && parseInt($(this).text()) <= 28 ){
+
+                under7++
+            }
+            else if (parseInt($(this).text()) >= 29 && parseInt($(this).text()) <= 34 ){
+
+                under9++
+            }
+
+        });
+
+
+        if (under7 + under9 == 4){
+
+            if (under7 >=1){
+
+
+                if (education_for_c >= 84 && education_for_c <= 111){
+                    $('.language-education').text(13);
+                }
+                if (education_for_c >= 112 && education_for_c <= 150){
+                    $('.language-education').text(25);
+                }
+
+
+            }
+            else{
+
+
+                if (education_for_c >= 84 && education_for_c <= 111){
+                    $('.language-education').text(25);
+                }
+                if (education_for_c >= 112 && education_for_c <= 150){
+                    $('.language-education').text(50);
+                }
+                scoreBoard();
+
+            }
+
+
+
+        }
+        else{
+            $('.language-education').text(0);
+        }
+
+
+
+
+
+
+
+
+
+
+    }
+
+    function canadian_work_education() {
+
+
+        var canada_value = parseInt($('.work-ex-canada-value').text());
+        var education_for_c = parseInt($('.education-value').text());
+
+        if (canada_value >=35 && canada_value<=40 ){
+
+            if (education_for_c >=84 && education_for_c <=111) {
+
+
+                $('.canada-ex-edu').text(13)
+
+            }
+
+            else if (education_for_c >=112 && education_for_c <=150){
+                $('.canada-ex-edu').text(25)
+
+                }
+
+
+        }
+
+    if (canada_value >=46 && canada_value<= 80){
+
+        if (education_for_c >=84 && education_for_c <=111) {
+            $('.canada-ex-edu').text(25)
+
+
+        }
+
+        else if (education_for_c >=112 && education_for_c <=150){
+            $('.canada-ex-edu').text(50)
+
+        }
+
+
+}
+
+scoreBoard();
+
+
+
+
+    }
+
+
     /*married status change*/
-
-
-
     function marriedChange() {
         var married_sum = 0;
 
@@ -1307,13 +1515,6 @@ $(document).ready( function() {
     /*end married status change*/
 
 
-
-
-
-
-
-
-
     function scoreBoard(){
 
       var sum = 0;
@@ -1326,6 +1527,12 @@ $(document).ready( function() {
           //console.log($(this).text());
 
       });
+      if(sum >601 && sum <640){
+          sum = 600;
+      }
+      else if (sum > 1201){
+          sum = 1200;
+      }
 
       $('.score').text(sum);
 
@@ -1344,9 +1551,29 @@ $(document).ready( function() {
       $('.additional-points').text(sum_D);
 
 
+      var work_total = 0;
+        $('.skill-transfer .score-board-trans').each(function () {
+
+            work_total = work_total + parseInt($(this).text());
+
+
+        });
+
+        if (work_total >100){
+            work_total = 100;
+        }
+
+        $('.trans-sub').text(work_total);
+
+
 
   }
 
 
 
 });
+
+
+
+
+

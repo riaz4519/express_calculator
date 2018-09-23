@@ -16,6 +16,7 @@
             font-size: 80%;
         }
 
+
         .spouse-show{
             display: block;
         }
@@ -91,7 +92,7 @@
                         <div class="col s10">
                             <div class="range-field"  >
                                 <small style="color: #9e9e9e;">Age:</small>
-                                <input type="range" class="input-range take-value age-field" min="0" max="100" value="17"/>
+                                <input type="range" class="input-range take-value age-field" min="16" max="56" value="17"/>
                             </div>
 
 
@@ -200,21 +201,14 @@
                             <p>
                                 <label>
                                     <input class="with-gap english-listening" value="0" name="group4" type="radio"  />
-                                    <span>None or less than 4</span>
+                                    <span>IELTS less than 4</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap english-listening" value="6" name="group4" type="radio"  />
-                                    <span>IELTS 4.5 </span>
-                                </label>
-                            </p>
-
-                            <p>
-                                <label>
-                                    <input class="with-gap english-listening" value="6" name="group4" type="radio"  />
-                                    <span>IELTS 5.0 </span>
+                                    <span>IELTS 4.5 or 5 </span>
                                 </label>
                             </p>
 
@@ -224,6 +218,7 @@
                                     <span>IELTS 5.5 </span>
                                 </label>
                             </p>
+
                             <p>
                                 <label>
                                     <input class="with-gap english-listening" value="17" name="group4" type="radio"  />
@@ -242,15 +237,12 @@
                                     <span>IELTS 8.0 </span>
                                 </label>
                             </p>
-
                             <p>
                                 <label>
                                     <input class="with-gap english-listening" value="34" name="group4" type="radio"  />
-                                    <span>IELTS 8.5 </span>
+                                    <span>IELTS 8.5 to 9 </span>
                                 </label>
                             </p>
-
-
 
 
                         </div>
@@ -268,55 +260,49 @@
                             <p>
                                 <label>
                                     <input class="with-gap english-reading" value=0 name="group5" type="radio"  />
-                                    <span>None or less than 4</span>
+                                    <span>None or less than 3.5</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap english-reading" value="6" name="group5" type="radio"  />
-                                    <span>IELTS 3.5 </span>
-                                </label>
-                            </p>
-
-                            <p>
-                                <label>
-                                    <input class="with-gap english-reading" value="6" name="group5" type="radio"  />
-                                    <span>IELTS 4.0 to 4.5 </span>
+                                    <span>IELTS 3.5 to 4.0 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap english-reading" value="9" name="group5" type="radio"  />
-                                    <span>IELTS 5.0 to 5.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap english-reading" value="17" name="group5" type="radio"  />
-                                    <span>IELTS 6.0</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap english-reading" value="23" name="group5" type="radio"  />
-                                    <span>IELTS 6.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap english-reading" value="31" name="group5" type="radio"  />
-                                    <span>IELTS 7.0 to 7.5</span>
+                                    <span>IELTS 5.0 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap english-reading" value="34" name="group5" type="radio"  />
-                                    <span>IELTS 8.0 to 9.0 </span>
+                                    <input class="with-gap english-reading" value="17" name="group5" type="radio"  />
+                                    <span>IELTS 5.5 to 6.0 </span>
                                 </label>
                             </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap english-reading" value="23" name="group5" type="radio"  />
+                                    <span>IELTS 6.5</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap english-reading" value="31" name="group5" type="radio"  />
+                                    <span>IELTS 7.0 </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap english-reading" value="34" name="group5" type="radio"  />
+                                    <span>IELTS 7.5 to 9</span>
+                                </label>
+                            </p>
+
 
 
 
@@ -345,48 +331,43 @@
                             <p>
                                 <label>
                                     <input class="with-gap english-writing" value="6" name="group6" type="radio"  />
-                                    <span>IELTS 4.5 </span>
-                                </label>
-                            </p>
-
-                            <p>
-                                <label>
-                                    <input class="with-gap english-writing" value="6" name="group6" type="radio"  />
-                                    <span>IELTS 5.0 </span>
+                                    <span>IELTS 4.0 to 5.0 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap english-writing" value="9" name="group6" type="radio"  />
-                                    <span>IELTS 5.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap english-writing" value="17" name="group6" type="radio"  />
-                                    <span>IELTS 6.0 to 7.0 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap english-writing" value="23" name="group6" type="radio"  />
-                                    <span>IELTS 7.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap english-writing" value="31" name="group6" type="radio"  />
-                                    <span>IELTS 8.0 </span>
+                                    <span>IELTS 5.5</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap english-writing" value="34" name="group6" type="radio"  />
-                                    <span>IELTS 8.5 </span>
+                                    <input class="with-gap english-writing" value="17" name="group6" type="radio"  />
+                                    <span>IELTS 6.0 </span>
                                 </label>
                             </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap english-writing" value="23" name="group6" type="radio"  />
+                                    <span>IELTS 6.5 </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap english-writing" value="31" name="group6" type="radio"  />
+                                    <span>IELTS 7.0 </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap english-writing" value="34" name="group6" type="radio"  />
+                                    <span>IELTS 7.5 to 9 </span>
+                                </label>
+                            </p>
+
+
 
 
 
@@ -415,14 +396,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap english-speaking" value="6" name="group7" type="radio"  />
-                                    <span>IELTS 4.0 or 4.5 </span>
-                                </label>
-                            </p>
-
-                            <p>
-                                <label>
-                                    <input class="with-gap english-speaking" value="6" name="group7" type="radio"  />
-                                    <span>IELTS 5.0 </span>
+                                    <span>IELTS 4.0 to 5.0 </span>
                                 </label>
                             </p>
 
@@ -432,6 +406,7 @@
                                     <span>IELTS 5.5 </span>
                                 </label>
                             </p>
+
                             <p>
                                 <label>
                                     <input class="with-gap english-speaking" value="17" name="group7" type="radio"  />
@@ -450,13 +425,14 @@
                                     <span>IELTS 7.0 </span>
                                 </label>
                             </p>
-
                             <p>
                                 <label>
                                     <input class="with-gap english-speaking" value="34" name="group7" type="radio"  />
-                                    <span>IELTS 7.5 to 9.0 </span>
+                                    <span>IELTS 7.5 to 9 </span>
                                 </label>
                             </p>
+
+
 
 
 
@@ -905,7 +881,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap foreign-ex " name="group19" value="2" type="radio"  />
-                                    <span> Valid Canadian trade certificate</span>
+                                    <span>Valid Canadian trade certificate</span>
                                 </label>
                             </p>
 
