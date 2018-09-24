@@ -327,6 +327,7 @@ $(document).ready( function() {
        scoreBoard();
        education_language();
        canadian_work_education();
+       education_language();
 
 
 
@@ -350,7 +351,7 @@ $(document).ready( function() {
        if ($('.spouse').hasClass('spouse-remove')){
 
            $('.english-listening-value').text(listening);
-
+           scoreBoard();
 
        }
        else{
@@ -372,7 +373,7 @@ $(document).ready( function() {
 
            $('.english-listening-value').text(listening);
            //scoreBoard();
-
+           scoreBoard();
 
        }
 
@@ -408,6 +409,7 @@ $(document).ready( function() {
         if ($('.spouse').hasClass('spouse-remove')){
 
             $('.english-reading-value').text(reading);
+            scoreBoard();
 
 
         }
@@ -429,13 +431,15 @@ $(document).ready( function() {
             }
 
             $('.english-reading-value').text(reading);
-            //scoreBoard();
+            scoreBoard();
+
 
 
         }
 
         scoreBoard();
         foreign_work_ex();
+        education_language();
 
 
 
@@ -467,6 +471,7 @@ $(document).ready( function() {
         if ($('.spouse').hasClass('spouse-remove')){
 
             $('.english-writing-value').text(writing);
+            scoreBoard();
 
 
         }
@@ -488,13 +493,16 @@ $(document).ready( function() {
             }
 
             $('.english-writing-value').text(writing);
-            //scoreBoard();
+            scoreBoard();
+
 
 
         }
 
         scoreBoard();
+
         foreign_work_ex();
+        education_language();
 
 
 
@@ -527,33 +535,40 @@ $(document).ready( function() {
 
             $('.english-speaking-value').text(speaking);
 
+            scoreBoard();
 
         }
         else{
             if (speaking == 9 ){
                 speaking = 8;
+
             }
             else if(speaking== 17){
                 speaking = 16;
+
             }
             else if(speaking == 23){
                 speaking = 22;
+
             }
             else if(speaking == 31){
                 speaking = 29;
             }
             else if(speaking == 34){
                 speaking = 32;
+
             }
 
             $('.english-speaking-value').text(speaking);
-            //scoreBoard();
+            scoreBoard();
+
 
 
         }
 
         scoreBoard();
         foreign_work_ex();
+        education_language();
 
 
 
@@ -594,7 +609,7 @@ $(document).ready( function() {
         else{
 
             $('.french-listening-value').text(listening);
-            //scoreBoard();
+
         }
 
         scoreBoard();
@@ -1242,6 +1257,8 @@ $(document).ready( function() {
     /*Official language and level of education*/
     function education_language() {
 
+
+
         var education_for_c = parseInt($('.education-value').text());
 
         var under7 = 0;
@@ -1275,6 +1292,7 @@ $(document).ready( function() {
                 }
 
 
+
             }
             else{
 
@@ -1299,6 +1317,7 @@ $(document).ready( function() {
 
 
 
+        scoreBoard();
 
 
 
@@ -1385,8 +1404,6 @@ scoreBoard();
 
           sum = sum + parseInt($(this).text());
 
-          //console.log($(this).text());
-
       });
 
 
@@ -1406,12 +1423,9 @@ scoreBoard();
       });
       $('.additional-points').text(sum_D);
 
-
       var work_total = 0;
         $('.skill-transfer .score-board-trans').each(function () {
-
             work_total = work_total + parseInt($(this).text());
-
 
         });
 

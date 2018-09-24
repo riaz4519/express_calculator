@@ -112,54 +112,53 @@
                             <p>
                             <label>
                                 <input class="with-gap   education" name="group3" value="0" type="radio"   />
-                                <span>Less than Secondary school(high school)credential</span>
+                                <span>Less than secondary school (high school)</span>
                             </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap  education" name="group3" value="30" type="radio"  />
-                                    <span>Secondary school (high school) credential</span>
+                                    <span>Secondary diploma (high school graduation)</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap education" name="group3" value="90" type="radio"  />
-                                    <span>One-year post-secondary program credential</span>
+                                    <span>One-year degree, diploma or certificate from  a university, college, trade or technical school, or other institute</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap education" name="group3" value="98" type="radio"  />
-                                    <span>Two-year post-secondary program credential</span>
+                                    <span>Two-year program at a university, college, trade or technical school, or other institute</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap education" name="group3" value="120"type="radio"  />
-                                    <span>Post-secondary program credential of three years or longer</span>
+                                    <span>Bachelor’s degree OR  a three or more year program at a university, college, trade or technical school, or other institute</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap education" name="group3" value="128"type="radio"  />
-                                    <span>Two or more post-secondary credentials and at least one of them form a post-secondary program of
-                                    three years or longer</span>
+                                    <span>Two or more certificates, diplomas, or degrees. One must be for a program of three or more years</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap education" name="group3" value="135"type="radio"  />
-                                    <span>University Master's credential or an entry-to-practice professional degree</span>
+                                    <span>Master’s degree, OR professional degree needed to practice in a licensed profession (For “professional degree,” the degree program must have been in: medicine, veterinary medicine, dentistry, optometry, law, chiropractic medicine, or pharmacy.)</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap education" name="group3" value="150" type="radio"  />
-                                    <span>University-level credential at the Doctoral level</span>
+                                    <span>Doctoral level university degree (Ph.D.)</span>
                                 </label>
                             </p>
 
@@ -331,14 +330,14 @@
                             <p>
                                 <label>
                                     <input class="with-gap english-writing" value="6" name="group6" type="radio"  />
-                                    <span>IELTS 4.0 to 5.0 </span>
+                                    <span>IELTS 4.0 to 4.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap english-writing" value="9" name="group6" type="radio"  />
-                                    <span>IELTS 5.5</span>
+                                    <span>IELTS 5.0</span>
                                 </label>
                             </p>
 
@@ -708,7 +707,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap french-speaking" value="1" name="group11" type="radio"  />
-                                    <span>TEF 217-309 </span>
+                                    <span>TEF 271-309 </span>
                                 </label>
                             </p>
 
@@ -946,54 +945,53 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="0" type="radio"  />
-                                    <span>Less than Secondary school(high school)credential</span>
+                                    <span>Less than secondary school (high school)</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="2" type="radio"  />
-                                    <span>Secondary school (high school) credential</span>
+                                    <span>Secondary school (high school graduation)</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="6" type="radio"  />
-                                    <span>One-year post-secondary program credential</span>
+                                    <span>One-year program at a university, college, trade or technical school, or other institute</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="7" type="radio"  />
-                                    <span>Two-year post-secondary program credential</span>
+                                    <span>Two-year program at a university, college, trade or technical in school, or other institute</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="8" type="radio"  />
-                                    <span>Post-secondary program credential of three years or longer</span>
+                                    <span>Bachelor’s degree OR  a three or more year program at a university, college, trade or technical school, or other institute</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="9" type="radio"  />
-                                    <span>Two or more post-secondary credentials and at least one of them form a post-secondary program of
-                                    three years or longer</span>
+                                    <span>Two or more certificates, diplomas, or degrees. One must be for a program of three or more years</span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="10" type="radio"  />
-                                    <span>University Master's credential or an entry-to-practice professional degree</span>
+                                    <span>Master’s degree, or professional degree needed to practice in a licensed profession (For “professional degree”, the degree program must have been in: medicine, veterinary medicine, dentistry, optometry, law, chiropractic medicine, or pharmacy.) 	</span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-education" name="group40" value="10" type="radio"  />
-                                    <span>University-level credential at the Doctoral level</span>
+                                    <span>Doctoral level university degree (PhD)</span>
                                 </label>
                             </p>
 
@@ -1097,53 +1095,29 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
-                                    <span>None or less than 4</span>
-                                </label>
-                            </p>
-
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
-                                    <span>TEF 145-180 IELTS 4.5 </span>
+                                    <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
-                                    <span>TEF 181-216 - IELTS 5.0 </span>
+                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
-                                    <span>TEF 217-248 -IELTS 5.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
                                     <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
-                                    <span>TEF 249-279 -IELTS 6.0 to 7.0 </span>
+                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
-                                    <span>TEF 280-297 -IELTS 7.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
-                                    <span>TEF 298-315 -IELTS 8.0 </span>
-                                </label>
-                            </p>
+
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
-                                    <span>TEF 316-333 -IELTS 8.5 or 9.0</span>
+                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
 
@@ -1166,54 +1140,30 @@
                             <small style="color: #9e9e9e;">Reading</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="0" type="radio"  />
-                                    <span>None or less than 4</span>
+                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
+                                    <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="0" type="radio"  />
-                                    <span>TEF 121-150 -IELTS 4.5 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
+                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="1" type="radio"  />
-                                    <span>TEF 151-180 -IELTS 5.0 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
+                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
 
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="1" type="radio"  />
-                                    <span>TEF 181-216 -IELTS 5.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="3" type="radio"  />
-                                    <span>TEF 207-232 -IELTS 6.0 to 7.0 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="3" type="radio"  />
-                                    <span>TEF 233-247 -IELTS 7.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="5" type="radio"  />
-                                    <span>TEF 248-262 -IELTS 8.0 </span>
-                                </label>
-                            </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-reading" name="group22" value="5" type="radio"  />
-                                    <span>TEF 263-277 -IELTS 8.5 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
+                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
 
@@ -1236,57 +1186,32 @@
                             <small style="color: #9e9e9e;">Writing</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="0" type="radio"  />
-                                    <span>None or less than 4</span>
+                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
+                                    <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="0" type="radio"  />
-                                    <span>TEF 181-255 -IELTS 4.5 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
+                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="1" type="radio"  />
-                                    <span>TEF 226-270 -IELTS 5.0 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
+                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
 
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="1" type="radio"  />
-                                    <span>TEF 271-309 -IELTS 5.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="3" type="radio"  />
-                                    <span>TEF 310-348 -IELTS 6.0 to 7.0 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="3" type="radio"  />
-                                    <span>TEF 349-370 -IELTS 7.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="5" type="radio"  />
-                                    <span>TEF 371-392 -IELTS 8.0 </span>
-                                </label>
-                            </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-writing" name="group23" value="5" type="radio"  />
-                                    <span>TEF 393-415 -IELTS 7.5 to 9.0 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
+                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
-
 
 
 
@@ -1306,54 +1231,30 @@
                             <small style="color: #9e9e9e;">Speaking</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="0" type="radio"  />
-                                    <span>None or less than 4</span>
+                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
+                                    <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="0" type="radio"  />
-                                    <span>TEF 181-255 -IELTS 4.5 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
+                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="1" type="radio"  />
-                                    <span>TEF 226-270 -IELTS 5.0 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
+                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
 
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="1" type="radio"  />
-                                    <span>TEF 271-309 -IELTS 5.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="3" type="radio"  />
-                                    <span>TEF 310-348 -IELTS 6.0 to 7.0 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="3" type="radio"  />
-                                    <span>TEF 349-370 -IELTS 7.5 </span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="5" type="radio"  />
-                                    <span>TEF 371-392 -IELTS 8.0 </span>
-                                </label>
-                            </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-speaking" name="group24" value="5" type="radio"  />
-                                    <span>TEF 393-415 -IELTS 7.5 to 9.0 </span>
+                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
+                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
 
