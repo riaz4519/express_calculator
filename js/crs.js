@@ -900,7 +900,7 @@ $(document).ready( function() {
 
        $('.english-pro .score-board').each(function () {
 
-           //ielts_avg = ielts_avg + parseInt($(this).text());
+
            if (parseInt($(this).text()) >= 16 && parseInt($(this).text()) <= 28 ){
 
                under7++
@@ -994,8 +994,6 @@ $(document).ready( function() {
 
 
 
-       ielts_avg = ielts_avg /4;
-       console.log(ielts_avg);
 
        if (foreign_work == 1){
 
@@ -1005,172 +1003,39 @@ $(document).ready( function() {
        }
 
 
-       /*
+       if (canada_ex  == 40){
 
+           if(foreign_work == 2){
+               $('.canada-foreign').text(13);
+           }
+           else if(foreign_work ==3){
+               $('.canada-foreign').text(25);
 
-        }*/
+           }
+           else {
+               $('.canada-foreign').text(0);
+           }
+           scoreBoard();
 
-        if( canada_ex > 40 && ielts_avg < 16) {
+       }
+       else if(canada_ex >40){
+           if(foreign_work == 2){
+               $('.canada-foreign').text(25);
+           }
+           else if(foreign_work ==3){
+               $('.canada-foreign').text(50);
 
-            if (foreign_work == 2) {
-                $('.canada-foreign').text(25);
+           }
+           else {
+               $('.canada-foreign').text(0);
+           }
 
+           scoreBoard();
+       }
 
-            }
-            else if (foreign_work == 3) {
-                $('.canada-foreign').text(50);
 
-            }
-        }
 
-        else if (canada_ex == 40 && ielts_avg < 16){
 
-            if (foreign_work == 2){
-                $('.canada-foreign').text(13);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.canada-foreign').text(25);
-
-            }
-
-        }
-
-
-
-
-
-
-     /*  else if( canada_ex == 0 && ielts_avg >= 16 && ielts_avg <= 28){
-
-            if (foreign_work == 2){
-                $('.language-foreign').text(13);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.language-foreign').text(25);
-
-            }
-
-        }
-        else if( canada_ex == 0 && ielts_avg >= 29 && ielts_avg <= 34){
-
-            if (foreign_work == 2){
-                $('.language-foreign').text(25);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.language-foreign').text(50);
-
-            }
-
-        }*/
-
-        else if (canada_ex == 40 && ielts_avg >= 16 && ielts_avg <= 28 ){
-
-
-            console.log('fas');
-
-            if (foreign_work == 2){
-                $('.language-foreign').text(13);
-                $('.canada-foreign').text(13);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.language-foreign').text(25);
-                $('.canada-foreign').text(25);
-
-            }
-
-        }
-
-
-        else if (canada_ex == 40 && ielts_avg >= 29 && ielts_avg <= 34 ){
-
-            console.log('fus');
-
-            if (foreign_work == 2){
-                $('.language-foreign').text(25);
-                $('.canada-foreign').text(25);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.language-foreign').text(50);
-                $('.canada-foreign').text(50);
-
-            }
-
-        }
-
-
-        else if( canada_ex > 40 && ielts_avg >= 16 && ielts_avg <= 28){
-
-            if (foreign_work == 2){
-                $('.language-foreign').text(13);
-                $('.canada-foreign').text(25);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.language-foreign').text(25);
-                $('.canada-foreign').text(50);
-
-            }
-
-        }
-
-
-        else if( canada_ex > 40 && ielts_avg >= 29 && ielts_avg <= 34){
-
-            if (foreign_work == 2){
-                $('.language-foreign').text(25);
-                $('.canada-foreign').text(25);
-
-
-            }
-            else  if (foreign_work == 3){
-                $('.language-foreign').text(50);
-                $('.canada-foreign').text(50);
-
-            }
-
-        }
-      /*  else{
-
-            $('.language-foreign').text(0);
-            $('.canada-foreign').text(0);
-
-        }*/
-
-        /*trade*/
-
-  /*      var trade_value = $('input[name="group19"]:checked').val();
-        if(trade_value != null){
-
-            if (trade_value == 2){
-
-                if (ielts_avg >= 8 && ielts_avg <= 15){
-                    $('.trade-certificate').text(25);
-                    console.log('fsfsfsdf');
-                }
-                else if(ielts_avg >= 9 && ielts_avg <= 34){
-                    $('.trade-certificate').text(50);
-                }
-
-
-            }
-            else{
-                $('.trade-certificate').text(0);
-            }
-
-
-        }
-*/
 
 
 
@@ -1189,10 +1054,6 @@ $(document).ready( function() {
     $('.foreign-ex').on('click',function () {
 
         foreign_work_ex();
-
-
-
-
 
 
 
@@ -1527,12 +1388,7 @@ scoreBoard();
           //console.log($(this).text());
 
       });
-      if(sum >601 && sum <640){
-          sum = 600;
-      }
-      else if (sum > 1201){
-          sum = 1200;
-      }
+
 
       $('.score').text(sum);
 
