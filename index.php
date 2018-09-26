@@ -1001,7 +1001,7 @@
                         </div>
                         <div class="col s2 center-align-position">
 
-                            <b><span class="spouse-education-value score-board" >0</span></b>
+                            <b><span class="spouse-education-value score-board-sp" >0</span></b>
 
 
                         </div>
@@ -1061,7 +1061,7 @@
 
                             </div>
                             <div class="col s2 center-align">
-                                <b><span class="spouse-ex-canada-value score-board" >0</span></b>
+                                <b><span class="spouse-ex-canada-value score-board-sp" >0</span></b>
 
 
                             </div>
@@ -1126,7 +1126,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="spouse-listening-value score-board" >0</span></b>
+                            <b><span class="spouse-listening-value score-board-sp" >0</span></b>
 
 
                         </div>
@@ -1140,21 +1140,21 @@
                             <small style="color: #9e9e9e;">Reading</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
+                                    <input class="with-gap spouse-reading" name="group32" value="0" type="radio"  />
                                     <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
+                                    <input class="with-gap spouse-reading" name="group32" value="1" type="radio"  />
                                     <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
+                                    <input class="with-gap spouse-reading" name="group32" value="3" type="radio"  />
                                     <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
@@ -1162,7 +1162,7 @@
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
+                                    <input class="with-gap spouse-reading" name="group32" value="5" type="radio"  />
                                     <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
@@ -1172,7 +1172,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="spouse-reading-value score-board" >0</span></b>
+                            <b><span class="spouse-reading-value score-board-sp" >0</span></b>
 
 
                         </div>
@@ -1186,21 +1186,21 @@
                             <small style="color: #9e9e9e;">Writing</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
+                                    <input class="with-gap spouse-writing" name="group33" value="0" type="radio"  />
                                     <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
+                                    <input class="with-gap spouse-writing" name="group33" value="1" type="radio"  />
                                     <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
+                                    <input class="with-gap spouse-writing" name="group33" value="3" type="radio"  />
                                     <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
@@ -1208,7 +1208,7 @@
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
+                                    <input class="with-gap spouse-writing" name="group33" value="5" type="radio"  />
                                     <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
@@ -1217,7 +1217,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="spouse-writing-value score-board" >0</span></b>
+                            <b><span class="spouse-writing-value score-board-sp" >0</span></b>
 
 
                         </div>
@@ -1231,21 +1231,21 @@
                             <small style="color: #9e9e9e;">Speaking</small>
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="0" type="radio"  />
+                                    <input class="with-gap spouse-speaking" name="group34" value="0" type="radio"  />
                                     <span>TEF 180 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="1" type="radio"  />
+                                    <input class="with-gap spouse-speaking" name="group34" value="1" type="radio"  />
                                     <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
+                                    <input class="with-gap spouse-speaking" name="group34" value="3" type="radio"  />
                                     <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
@@ -1253,7 +1253,7 @@
 
                             <p>
                                 <label>
-                                    <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
+                                    <input class="with-gap spouse-speaking" name="group34" value="5" type="radio"  />
                                     <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
@@ -1263,7 +1263,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="spouse-speaking-value score-board" >0</span></b>
+                            <b><span class="spouse-speaking-value score-board-sp" >0</span></b>
 
 
                         </div>
@@ -1280,7 +1280,7 @@
 
                     </div>
                     <div class="col s2 center-align-position">
-                        <b><span class="spouse-subtotal" >0</span></b>
+                        <b><span class="spouse-subtotal" id="spouse-subtotal">0</span></b>
 
                     </div>
 

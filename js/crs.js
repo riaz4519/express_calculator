@@ -4,9 +4,6 @@
 
 $(document).ready( function() {
 
-  
-
-
     /*age value change according to marital status*/
 
     /*end age value change*/
@@ -1212,8 +1209,12 @@ $(document).ready( function() {
     /*spouse listening*/
     $('.spouse-listening').on('click',function () {
 
-        $('.spouse-listening-value').text($(this).val());
-       // scoreBoard();
+
+
+        var value = $('input[name="group21"]:checked').val();
+
+        $('.spouse-listening-value').text(value);
+       scoreBoard();
         marriedChange();
 
     });
@@ -1223,8 +1224,11 @@ $(document).ready( function() {
     /*spouse reading*/
     $('.spouse-reading').on('click',function () {
 
-        $('.spouse-reading-value').text($(this).val());
-        //scoreBoard();
+        console.log('fsfsd');
+        var value = $('input[name="group32"]:checked').val();
+
+        $('.spouse-reading-value').text(value);
+        scoreBoard();
         marriedChange();
 
     });
@@ -1233,9 +1237,10 @@ $(document).ready( function() {
 
     /*spouse writing*/
     $('.spouse-writing').on('click',function () {
+        var value = $('input[name="group33"]:checked').val();
 
-        $('.spouse-writing-value').text($(this).val());
-        //scoreBoard();
+        $('.spouse-writing-value').text(value);
+        scoreBoard();
         marriedChange();
 
     });
@@ -1244,8 +1249,9 @@ $(document).ready( function() {
     /*spouse writing*/
     $('.spouse-speaking').on('click',function () {
 
-        $('.spouse-speaking-value').text($(this).val());
-        //scoreBoard();
+        var value = $('input[name="group34"]:checked').val();
+        $('.spouse-speaking-value').text(value);
+        scoreBoard();
         marriedChange();
 
 
@@ -1287,8 +1293,11 @@ $(document).ready( function() {
                 if (education_for_c >= 84 && education_for_c <= 111){
                     $('.language-education').text(13);
                 }
-                if (education_for_c >= 112 && education_for_c <= 150){
+                else if (education_for_c >= 112 && education_for_c <= 150){
                     $('.language-education').text(25);
+                }
+                else{
+                    $('.language-education').text(0);
                 }
 
 
@@ -1300,8 +1309,11 @@ $(document).ready( function() {
                 if (education_for_c >= 84 && education_for_c <= 111){
                     $('.language-education').text(25);
                 }
-                if (education_for_c >= 112 && education_for_c <= 150){
+                else if (education_for_c >= 112 && education_for_c <= 150){
                     $('.language-education').text(50);
+                }
+                else{
+                    $('.language-education').text(0);
                 }
                 scoreBoard();
 
@@ -1378,7 +1390,7 @@ scoreBoard();
         var married_sum = 0;
 
 
-        $('.spouse-area .score-board').each(function () {
+        $('.spouse-area .score-board-sp').each(function () {
 
            married_sum = married_sum + parseInt($(this).text());
            console.log($(this).text());
@@ -1391,6 +1403,28 @@ scoreBoard();
 
 
     }
+/*
+    $('.married-status').on('click',function () {
+
+        var score = 0;
+
+        var current_score = parseInt($('#score').text());
+        var marr_sub = parseInt($('.spouse-subtotal').text());
+        console.log('fsdf'+current_score);
+      if ($(this).is(':checked')== true){
+
+
+          score = current_score + marr_sub;
+
+
+      }else{
+          score = current_score - marr_sub;
+      }
+
+      $('.score').text(score);
+
+    });*/
+
 
     /*end married status change*/
 
@@ -1405,6 +1439,15 @@ scoreBoard();
           sum = sum + parseInt($(this).text());
 
       });
+
+        var marr_sub = parseInt($('.spouse-subtotal').text());
+
+      if ($('.married-status').is(':checked')){
+          sum = sum + marr_sub;
+      }
+      else{
+         sum = sum - marr_sub;
+      }
 
 
       $('.score').text(sum);
