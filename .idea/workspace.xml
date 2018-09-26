@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d4b2607-a1e8-4996-9d46-eefb429d8217" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/crs.js" afterPath="$PROJECT_DIR$/js/crs.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +30,8 @@
             <file leaf-file-name="crs.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/js/crs.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="205">
-                    <caret line="1445" column="10" lean-forward="false" selection-start-line="1445" selection-start-column="10" selection-end-line="1445" selection-end-column="31" />
+                  <state relative-caret-position="256">
+                    <caret line="1448" column="8" lean-forward="false" selection-start-line="1448" selection-start-column="8" selection-end-line="1448" selection-end-column="8" />
                     <folding>
                       <element signature="e#0#40#0" expanded="false" />
                       <element signature="e#187#5742#0" expanded="false" />
@@ -389,12 +387,12 @@
       <workItem from="1537705337381" duration="1033000" />
       <workItem from="1537761468021" duration="10795000" />
       <workItem from="1537873547762" duration="2594000" />
-      <workItem from="1537926895862" duration="12215000" />
+      <workItem from="1537926895862" duration="12565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166605000" />
+    <option name="totallyTimeSpent" value="166955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1165,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/crs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="1445" column="10" lean-forward="false" selection-start-line="1445" selection-start-column="10" selection-end-line="1445" selection-end-column="31" />
+        <state relative-caret-position="256">
+          <caret line="1448" column="8" lean-forward="false" selection-start-line="1448" selection-start-column="8" selection-end-line="1448" selection-end-column="8" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
             <element signature="e#187#5742#0" expanded="false" />

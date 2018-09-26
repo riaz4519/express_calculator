@@ -1440,13 +1440,13 @@ scoreBoard();
 
       });
 
-        var marr_sub = parseInt($('.spouse-subtotal').text());
+        var marr_sub = parseInt($('#spouse-subtotal').text());
 
       if ($('.married-status').is(':checked')){
           sum = sum + marr_sub;
       }
       else{
-         sum = sum - marr_sub;
+        
       }
 
 
