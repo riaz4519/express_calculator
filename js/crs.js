@@ -1286,14 +1286,33 @@ $(document).ready( function() {
 
 
         if (under7 + under9 == 4){
+            var startpoint13 = 0;
+            var endpoints13 = 0;
+            var startpoint125 = 0;
+            var endpoints25 = 0;
+
+
+            if ($('.spouse').hasClass('spouse-remove')){
+
+                startpoint13 = 90;
+                endpoints13 = 120;
+                startpoint125 = 128;
+                endpoints25 = 150;
+
+            }else {
+                startpoint13 = 84;
+                endpoints13 = 112;
+                startpoint125 = 119;
+                endpoints25 = 140;
+            }
 
             if (under7 >=1){
 
 
-                if (education_for_c >= 84 && education_for_c <= 111){
+                if (education_for_c >= startpoint13 && education_for_c <= endpoints13){
                     $('.language-education').text(13);
                 }
-                else if (education_for_c >= 112 && education_for_c <= 150){
+                else if (education_for_c >= startpoint125 && education_for_c <= endpoints25){
                     $('.language-education').text(25);
                 }
                 else{
@@ -1306,10 +1325,10 @@ $(document).ready( function() {
             else{
 
 
-                if (education_for_c >= 84 && education_for_c <= 111){
+                if (education_for_c >= startpoint13 && education_for_c <= endpoints13){
                     $('.language-education').text(25);
                 }
-                else if (education_for_c >= 112 && education_for_c <= 150){
+                else if (education_for_c >= startpoint125 && education_for_c <= endpoints25){
                     $('.language-education').text(50);
                 }
                 else{
@@ -1340,20 +1359,38 @@ $(document).ready( function() {
 
     function canadian_work_education() {
 
+        var startpoint13 = 0;
+        var endpoints13 = 0;
+        var startpoint125 = 0;
+        var endpoints25 = 0;
+        if ($('.spouse').hasClass('spouse-remove')){
+
+            startpoint13 = 90;
+            endpoints13 = 120;
+            startpoint125 = 128;
+            endpoints25 = 150;
+
+        }else {
+            startpoint13 = 84;
+            endpoints13 = 112;
+            startpoint125 = 119;
+            endpoints25 = 140;
+        }
+
 
         var canada_value = parseInt($('.work-ex-canada-value').text());
         var education_for_c = parseInt($('.education-value').text());
 
         if (canada_value >=35 && canada_value<=40 ){
 
-            if (education_for_c >=84 && education_for_c <=111) {
+            if (education_for_c >=startpoint13 && education_for_c <=endpoints13) {
 
 
                 $('.canada-ex-edu').text(13)
 
             }
 
-            else if (education_for_c >=112 && education_for_c <=150){
+            else if (education_for_c >=startpoint125 && education_for_c <=endpoints25){
                 $('.canada-ex-edu').text(25)
 
                 }
@@ -1363,13 +1400,13 @@ $(document).ready( function() {
 
     if (canada_value >=46 && canada_value<= 80){
 
-        if (education_for_c >=84 && education_for_c <=111) {
+        if (education_for_c >=startpoint13 && education_for_c <=endpoints13) {
             $('.canada-ex-edu').text(25)
 
 
         }
 
-        else if (education_for_c >=112 && education_for_c <=150){
+        else if (education_for_c >=startpoint125 && education_for_c <=endpoints25){
             $('.canada-ex-edu').text(50)
 
         }
@@ -1446,7 +1483,7 @@ scoreBoard();
           sum = sum + marr_sub;
       }
       else{
-        
+
       }
 
 
