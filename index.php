@@ -1,3 +1,15 @@
+<?php session_start(); ?>
+
+
+<?php
+
+if (!isset($_SESSION['counselor_id'])){
+
+    header('Location: login.php');
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,7 +21,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
     <link rel="stylesheet" type="text/css" href="materialize/css/noUiSlider.css">
     <style>
         .noUi-value-large{
@@ -39,6 +51,7 @@
             text-align: center;
             margin-top: 20px;
         }
+
     </style>
 
 </head>
@@ -54,6 +67,14 @@
     </div>
 </div>
     <div class="container">
+        <div class="row">
+
+            <div class="col offset-s9 s3 right-align">
+                <a href="logout.php" class="btn btn-block red">LogOut</a>
+
+            </div>
+
+        </div>
 
         <form method="post" action="">
 
@@ -292,13 +313,13 @@
                             <p>
                                 <label>
                                     <input class="with-gap english-reading" value="31" name="group5" type="radio"  />
-                                    <span>IELTS 7.0 </span>
+                                    <span>IELTS 7.0 to 7.5 </span>
                                 </label>
                             </p>
                             <p>
                                 <label>
                                     <input class="with-gap english-reading" value="34" name="group5" type="radio"  />
-                                    <span>IELTS 7.5 to 9</span>
+                                    <span>IELTS 8 to 9</span>
                                 </label>
                             </p>
 
@@ -858,7 +879,7 @@
 
                         </div>
                         <div class="col s2">
-                            <b><span class="foreign-ex-value  score-board">0</span></b>
+                            <b><span class="foreign-ex-value  score-board" hidden>0</span></b>
 
 
                         </div>
@@ -888,7 +909,7 @@
                         </div>
                         <div class="col s2">
 
-                            <b><span class="canadian-trade score-board">0</span></b>
+                            <b><span class="canadian-trade score-board" hidden>0</span></b>
 
 
                         </div>
@@ -1109,7 +1130,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-listening" name="group21" value="3" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
+                                    <span>TEF 249-279 - IELTS 6.0 to 7.5 </span>
                                 </label>
                             </p>
 
@@ -1117,7 +1138,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-listening" name="group21" value="5" type="radio"  />
-                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
+                                    <span>TEF 298-415 -IELTS 8.0 to 9.0</span>
                                 </label>
                             </p>
 
@@ -1141,21 +1162,21 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-reading" name="group32" value="0" type="radio"  />
-                                    <span>TEF 180 or ITELS 4.5  less </span>
+                                    <span>TEF 150 or ITELS 3.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-reading" name="group32" value="1" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
+                                    <span>TEF 151-206 - IELTS 4.0 to 5.0 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-reading" name="group32" value="3" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
+                                    <span>TEF 207-247 - IELTS 6.0 to 6.5 </span>
                                 </label>
                             </p>
 
@@ -1163,7 +1184,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-reading" name="group32" value="5" type="radio"  />
-                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
+                                    <span>TEF 248-415 -IELTS 7.0 to 9.0</span>
                                 </label>
                             </p>
 
@@ -1187,21 +1208,21 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-writing" name="group33" value="0" type="radio"  />
-                                    <span>TEF 180 or ITELS 4.5  less </span>
+                                    <span>TEF 225 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-writing" name="group33" value="1" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
+                                    <span>TEF 226-309 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-writing" name="group33" value="3" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
+                                    <span>TEF 310-370 - IELTS 6.0 to 6.5 </span>
                                 </label>
                             </p>
 
@@ -1209,7 +1230,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-writing" name="group33" value="5" type="radio"  />
-                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
+                                    <span>TEF 371-415 -IELTS 7.0 to 9.0</span>
                                 </label>
                             </p>
 
@@ -1232,21 +1253,21 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-speaking" name="group34" value="0" type="radio"  />
-                                    <span>TEF 180 or ITELS 4.5  less </span>
+                                    <span>TEF 225 or ITELS 4.5  less </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-speaking" name="group34" value="1" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 5.0 to 5.5 </span>
+                                    <span>TEF 226-309 - IELTS 5.0 to 5.5 </span>
                                 </label>
                             </p>
 
                             <p>
                                 <label>
                                     <input class="with-gap spouse-speaking" name="group34" value="3" type="radio"  />
-                                    <span>TEF 181-248 - IELTS 6.0 to 7.5 </span>
+                                    <span>TEF 310-370 - IELTS 6.0 to 6.5 </span>
                                 </label>
                             </p>
 
@@ -1254,7 +1275,7 @@
                             <p>
                                 <label>
                                     <input class="with-gap spouse-speaking" name="group34" value="5" type="radio"  />
-                                    <span>TEF 249-279 -IELTS 8.0 to 9.0</span>
+                                    <span>TEF 371-415 -IELTS 7.0 to 9.0</span>
                                 </label>
                             </p>
 
@@ -1571,20 +1592,61 @@
 
         </form>
 
-        <!-- Modal Trigger -->
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+
 
         <!-- Modal Structure -->
-        <div id="modal1" class="modal bottom-sheet">
-            <div class="modal-content">
-                <h4>Modal Header</h4>
-                <p>A bunch of text</p>
-            </div>
+
+        <div id="modal1" class="modal  modal-get-client-name">
+
+
+
+
+
+                    <div class="modal-content ">
+
+                        <div class="row">
+
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate first_name" required>
+                                <label for="first_name" class="blue-text" >First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate last_name" required>
+                                <label for="last_name" class="blue-text">Last Name</label>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate email_client">
+                                <label for="email" class="blue-text">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="phone" type="tel" class="validate phone_client" max="11" required>
+                                <label for="phone" class="blue-text">Phone</label>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
             <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                <button class="waves-effect btn btn-block center proceed-button">Proceed</button>
             </div>
         </div>
 
+        <!--modal-->
+
+        <!--print Button-->
+
+        <button class="btn btn-large btn-block print-button"><i class="material-icons left">print</i>PRINT</button>
+        <br>
+        <!---->
 
 
     </div>
@@ -1592,28 +1654,36 @@
 <script src="js/jquery.js"></script>
 
 <!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.js"></script>
 <script type="text/javascript" src="materialize/js/noUiSlider.js"></script>
 
 <script src="js/crs.js"></script>
-<script src="js/range-slider.js"></script>
+
 
 <script>
 
-    (function ($) {
-        $(function () {
 
-            //initialize all modals
-            $('.modal').modal();
+    $(document).ready(function () {
+        //initialize all modals
+        $('.modal').modal({
+            dismissible:false
+        });
 
-            //now you can open modal from code
-           // $('#modal1').modal('open');
 
-            //or by click on trigger
-            $('.trigger-modal').modal();
 
-        }); // end of document ready
-    })(jQuery);
+
+       $('.modal-get-client-name').modal('open');
+
+
+
+
+
+
+    });
+
+
+
+
 
 </script>
 </body>

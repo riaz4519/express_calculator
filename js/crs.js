@@ -4,6 +4,90 @@
 
 $(document).ready( function() {
 
+
+    var crs_calculate_object = {
+
+        marital_status:'SINGLE',
+
+        age_value:0,
+
+        education_value:0,
+        ielts_status:'NULL',
+
+        ielts_value:{
+            listening:0,
+
+            reading:0,
+
+            writing:0,
+
+            speaking:0
+        },
+        tef_status:'NULL',
+        tef_value:{
+            listening:0,
+
+            reading:0,
+
+            writing:0,
+
+            speaking:0
+        },
+        work_canada:0,
+
+        work_foreign:0,
+
+        canadian_trade:0,
+
+        spouse_edu:0,
+
+        spouse_work:0,
+
+        spouse_ielts_status:'NULL',
+
+        spouse_ielts:{
+            listening:0,
+
+            reading:0,
+
+            writing:0,
+
+            speaking:0
+        },
+        language_edu:0,
+
+        canada_work_ex_edu_level:0,
+
+        language_foreign_ex:0,
+
+        canada_foreign_ex:0,
+
+        trade_status:'NULL',
+
+        language_trade:0,
+
+        pro_nomination:0,
+
+        offer_of_employment:0,
+
+        canadian_education:0,
+
+        siblings_canada:0,
+
+        total_sum:" ",
+
+        ip:'NULL',
+
+        email:'NULL',
+
+        phone:'NULL',
+        city:'NULL',
+        name:'NULL'
+
+
+
+    };
+
     /*age value change according to marital status*/
 
     /*end age value change*/
@@ -20,11 +104,15 @@ $(document).ready( function() {
 
             if (age <= 17) {
 
+                crs_calculate_object.age_value = 0;
+
                 $('.show-points-age').text(0);
                 console.log('age');
 
             }
             else if (age == 18) {
+
+                crs_calculate_object.age_value = 88;
 
                 $('.show-points-age').text(99);
                 console.log('age');
@@ -32,17 +120,19 @@ $(document).ready( function() {
             }
             else if (age == 19) {
 
+                crs_calculate_object.age_value = 105;
                 $('.show-points-age').text(105);
                 console.log('age');
 
             }
             else if (age >= 20 && age <= 29) {
-
+                crs_calculate_object.age_value = 110;
                 $('.show-points-age').text(110);
                 console.log('age');
 
             }
             else if (age == 30) {
+                crs_calculate_object.age_value = 105;
 
                 $('.show-points-age').text(105);
                 console.log('age');
@@ -50,88 +140,95 @@ $(document).ready( function() {
             }
             else if (age == 31) {
 
+                crs_calculate_object.age_value = 99;
                 $('.show-points-age').text(99);
                 console.log('age');
 
             }
             else if (age == 32) {
 
+                crs_calculate_object.age_value = 94;
+
                 $('.show-points-age').text(94);
                 console.log('age');
 
-            } else if (age == 33) {
+            }
+            else if (age == 33) {
 
+                crs_calculate_object.age_value = 88;
                 $('.show-points-age').text(88);
                 console.log('age');
 
-            } else if (age == 34) {
+            }
+            else if (age == 34) {
+                crs_calculate_object.age_value = 83;
 
                 $('.show-points-age').text(83);
                 console.log('age');
 
             }
             else if (age == 35) {
-
+                crs_calculate_object.age_value = 77;
                 $('.show-points-age').text(77);
                 console.log('age');
 
             }
             else if (age == 36) {
-
+                crs_calculate_object.age_value = 72;
                 $('.show-points-age').text(72);
                 console.log('age');
 
             }
             else if (age == 37) {
-
+                crs_calculate_object.age_value = 66;
                 $('.show-points-age').text(66);
                 console.log('age');
 
             }
             else if (age == 38) {
-
+                crs_calculate_object.age_value = 61;
                 $('.show-points-age').text(61);
                 console.log('age');
 
             }
             else if (age == 39) {
-
+                crs_calculate_object.age_value = 55;
                 $('.show-points-age').text(55);
                 console.log('age');
 
             }
             else if (age == 40) {
-
+                crs_calculate_object.age_value = 50;
                 $('.show-points-age').text(50);
                 console.log('age');
 
             }
             else if (age == 41) {
-
+                crs_calculate_object.age_value = 39;
                 $('.show-points-age').text(39);
                 console.log('age');
 
             }
             else if (age == 42) {
-
+                crs_calculate_object.age_value = 28;
                 $('.show-points-age').text(28);
                 console.log('age');
 
             }
             else if (age == 43) {
-
+                crs_calculate_object.age_value = 17;
                 $('.show-points-age').text(17);
                 console.log('age');
 
             }
             else if (age == 44) {
-
+                crs_calculate_object.age_value = 6;
                 $('.show-points-age').text(6);
                 console.log('age');
 
             }
             else if (age >= 45) {
-
+                crs_calculate_object.age_value = 0;
                 $('.show-points-age').text(0);
                 console.log('age');
 
@@ -142,118 +239,120 @@ $(document).ready( function() {
 
             if (age <= 17) {
 
+                crs_calculate_object.age_value = 0;
+
                 $('.show-points-age').text(0);
                 console.log('age');
 
             }
             else if (age == 18) {
-
+                crs_calculate_object.age_value = 90;
                 $('.show-points-age').text(90);
                 console.log('age');
 
             }
             else if (age == 19) {
-
+                crs_calculate_object.age_value = 95;
                 $('.show-points-age').text(95);
                 console.log('age');
 
             }
             else if (age >= 20 && age <= 29) {
-
+                crs_calculate_object.age_value = 100;
                 $('.show-points-age').text(100);
                 console.log('age');
 
             }
             else if (age == 30) {
-
+                crs_calculate_object.age_value = 95;
                 $('.show-points-age').text(95);
                 console.log('age');
 
             }
             else if (age == 31) {
-
+                crs_calculate_object.age_value = 90;
                 $('.show-points-age').text(90);
                 console.log('age');
 
             }
             else if (age == 32) {
-
+                crs_calculate_object.age_value = 85;
                 $('.show-points-age').text(85);
                 console.log('age');
 
             } else if (age == 33) {
-
+                crs_calculate_object.age_value = 80;
                 $('.show-points-age').text(80);
                 console.log('age');
 
             } else if (age == 34) {
-
+                crs_calculate_object.age_value = 75;
                 $('.show-points-age').text(75);
                 console.log('age');
 
             }
             else if (age == 35) {
-
+                crs_calculate_object.age_value = 70;
                 $('.show-points-age').text(70);
                 console.log('age');
 
             }
             else if (age == 36) {
-
+                crs_calculate_object.age_value = 65;
                 $('.show-points-age').text(65);
                 console.log('age');
 
             }
             else if (age == 37) {
-
+                crs_calculate_object.age_value = 60;
                 $('.show-points-age').text(60);
                 console.log('age');
 
             }
             else if (age == 38) {
-
+                crs_calculate_object.age_value = 55;
                 $('.show-points-age').text(55);
                 console.log('age');
 
             }
             else if (age == 39) {
-
+                crs_calculate_object.age_value = 50;
                 $('.show-points-age').text(50);
                 console.log('age');
 
             }
             else if (age == 40) {
-
+                crs_calculate_object.age_value = 45;
                 $('.show-points-age').text(45);
                 console.log('age');
 
             }
             else if (age == 41) {
-
+                crs_calculate_object.age_value = 35;
                 $('.show-points-age').text(35);
                 console.log('age');
 
             }
             else if (age == 42) {
-
+                crs_calculate_object.age_value = 25;
                 $('.show-points-age').text(25);
                 console.log('age');
 
             }
             else if (age == 43) {
-
+                crs_calculate_object.age_value = 15;
                 $('.show-points-age').text(15);
                 console.log('age');
 
             }
             else if (age == 44) {
-
+                crs_calculate_object.age_value = 5;
                 $('.show-points-age').text(5);
                 console.log('age');
 
             }
             else if (age >= 45) {
-
+                crs_calculate_object.age_value = 0;
                 $('.show-points-age').text(0);
                 console.log('age');
 
@@ -293,34 +392,44 @@ $(document).ready( function() {
 
        if ($('.spouse').hasClass('spouse-remove')) {
 
+
            $('.education-value').text(education);
 
        }else{
            if (education == 30){
                education = 28;
+
            }
            else if (education == 90){
                education = 84;
+
            }
            else if (education == 98){
                education = 91;
-           }
+
+       }
            else if (education == 120){
                education = 112;
+
            }
            else if (education == 128){
                education = 119;
+
            }
            else if (education == 135){
                education = 126;
+
            }
            else if (education == 150){
                education = 140;
+
            }
+
 
 
            $('.education-value').text(education);
        }
+       crs_calculate_object.education_value = education;
        scoreBoard();
        education_language();
        canadian_work_education();
@@ -368,11 +477,13 @@ $(document).ready( function() {
                listening = 32;
            }
 
+
            $('.english-listening-value').text(listening);
            //scoreBoard();
            scoreBoard();
 
        }
+       crs_calculate_object.ielts_value.listening = listening;
 
        scoreBoard();
        foreign_work_ex();
@@ -433,6 +544,7 @@ $(document).ready( function() {
 
 
         }
+        crs_calculate_object.ielts_value.reading = reading;
 
         scoreBoard();
         foreign_work_ex();
@@ -495,6 +607,7 @@ $(document).ready( function() {
 
 
         }
+        crs_calculate_object.ielts_value.writing = writing;
 
         scoreBoard();
 
@@ -563,6 +676,8 @@ $(document).ready( function() {
 
         }
 
+        crs_calculate_object.ielts_value.speaking = speaking;
+
         scoreBoard();
         foreign_work_ex();
         education_language();
@@ -609,6 +724,8 @@ $(document).ready( function() {
 
         }
 
+        crs_calculate_object.tef_value.listening = listening;
+
         scoreBoard();
 
 
@@ -645,6 +762,8 @@ $(document).ready( function() {
             $('.french-reading-value').text(reading);
             //scoreBoard();
         }
+
+        crs_calculate_object.tef_value.reading = reading;
 
         scoreBoard();
 
@@ -686,6 +805,8 @@ $(document).ready( function() {
             //scoreBoard();
         }
 
+        crs_calculate_object.tef_value.writing = writing;
+
         scoreBoard();
 
 
@@ -726,6 +847,7 @@ $(document).ready( function() {
             //scoreBoard();
         }
 
+        crs_calculate_object.tef_value.speaking = speaking;
         scoreBoard();
 
 
@@ -754,6 +876,7 @@ $(document).ready( function() {
 
         if ($('.spouse').hasClass('spouse-remove')){
 
+            crs_calculate_object.marital_status = 'MARRIED';
 
             $('.spouse').removeClass('spouse-remove');
             $('.spouse-not-selected').addClass('spouse-remove');
@@ -788,6 +911,7 @@ $(document).ready( function() {
         }else{
 
 
+            crs_calculate_object.marital_status = 'SINGLE';
 
             $('.spouse').addClass('spouse-remove');
             $('.spouse-not-selected').removeClass('spouse-remove');
@@ -864,9 +988,11 @@ $(document).ready( function() {
 
             }
 
+
             $('.work-ex-canada-value').text(canada_work);
             //scoreBoard();
         }
+        crs_calculate_object.work_canada = canada_work;
 
         scoreBoard();
         foreign_work_ex();
@@ -936,11 +1062,13 @@ $(document).ready( function() {
               if (under5 >= 1){
 
                   $('.trade-certificate').text(25);
+                  crs_calculate_object.canadian_trade = 25;
 
               }
               else if (under7 >= 1 || under9 >=1){
 
                   $('.trade-certificate').text(50);
+                  crs_calculate_object.canadian_trade = 15;
               }
           }
        }
@@ -965,16 +1093,20 @@ $(document).ready( function() {
 
             if (foreign_work == 2){
 
+                crs_calculate_object.language_foreign_ex  = 13;
+
                 $('.language-foreign').text(13);
 
 
 
             }
             else if (foreign_work == 3){
+                crs_calculate_object.language_foreign_ex  = 25;
                 $('.language-foreign').text(25);
 
             }
             else{
+                crs_calculate_object.language_foreign_ex  = 0;
                 $('.language-foreign').text(0)
             }
             state_for_foreign_language = 1
@@ -982,6 +1114,7 @@ $(document).ready( function() {
         }else{
 
             if (foreign_work == 2){
+                crs_calculate_object.language_foreign_ex  = 25;
 
                 $('.language-foreign').text(25);
 
@@ -989,10 +1122,12 @@ $(document).ready( function() {
 
             }
             else if (foreign_work == 3){
+                crs_calculate_object.language_foreign_ex  = 50;
                 $('.language-foreign').text(50);
 
             }
             else{
+                crs_calculate_object.language_foreign_ex  = 0;
                 $('.language-foreign').text(0)
             }
             state_for_foreign_language = 2;
@@ -1001,6 +1136,7 @@ $(document).ready( function() {
 
     }else {
         $('.language-foreign').text(0);
+        crs_calculate_object.language_foreign_ex  = 0;
     }
 
 
@@ -1011,6 +1147,8 @@ $(document).ready( function() {
 
            $('.language-foreign').text(0);
            $('.canada-foreign').text(0);
+           crs_calculate_object.language_foreign_ex = 0;
+           crs_calculate_object.canada_foreign_ex = 0;
 
        }
 
@@ -1019,13 +1157,16 @@ $(document).ready( function() {
 
            if(foreign_work == 2){
                $('.canada-foreign').text(13);
+               crs_calculate_object.canada_foreign_ex = 13;
            }
            else if(foreign_work ==3){
                $('.canada-foreign').text(25);
+               crs_calculate_object.canada_foreign_ex = 25;
 
            }
            else {
                $('.canada-foreign').text(0);
+               crs_calculate_object.canada_foreign_ex = 25;
            }
            scoreBoard();
 
@@ -1033,13 +1174,16 @@ $(document).ready( function() {
        else if(canada_ex >40){
            if(foreign_work == 2){
                $('.canada-foreign').text(25);
+               crs_calculate_object.canada_foreign_ex = 25;
            }
            else if(foreign_work ==3){
                $('.canada-foreign').text(50);
+               crs_calculate_object.canada_foreign_ex = 50;
 
            }
            else {
                $('.canada-foreign').text(0);
+               crs_calculate_object.canada_foreign_ex = 0;
            }
 
            scoreBoard();
@@ -1081,6 +1225,7 @@ $(document).ready( function() {
     $('.provincial').on('click',function () {
 
 
+        var provin = parseInt($(this).val());
         $('.provincial-value').text($(this).val());
 
         var additional_total = 0;
@@ -1098,6 +1243,8 @@ $(document).ready( function() {
 
         scoreBoard();
 
+        crs_calculate_object.pro_nomination = provin;
+
     });
 
     /*fdsf*/
@@ -1105,6 +1252,8 @@ $(document).ready( function() {
     /*offer form canada*/
 
     $('.offer-em-canada').on('click',function () {
+
+        var offer_canada = parseInt($(this).val());
 
         $('.offer-em-canada-value').text($(this).val());
 
@@ -1121,6 +1270,8 @@ $(document).ready( function() {
 
         $('.score-additional-total').text(additional_total);
 
+        crs_calculate_object.offer_of_employment = offer_canada;
+
         scoreBoard();
 
     });
@@ -1131,6 +1282,7 @@ $(document).ready( function() {
     /*education canada value*/
 
     $('.education-canada').on('click',function () {
+        var education_canada = parseInt($(this).val());
 
         $('.education-canada-value').text($(this).val());
 
@@ -1147,6 +1299,8 @@ $(document).ready( function() {
 
         $('.score-additional-total').text(additional_total);
 
+        crs_calculate_object.canadian_education = education_canada;
+
         scoreBoard();
 
     });
@@ -1158,6 +1312,8 @@ $(document).ready( function() {
     /*sibling canada value*/
 
     $('.sibling-canada').on('click',function () {
+
+        var sibling_canda = parseInt($(this).val());
 
         $('.sibling-canada-value').text($(this).val());
 
@@ -1175,6 +1331,8 @@ $(document).ready( function() {
 
         $('.score-additional-total').text(additional_total);
 
+        crs_calculate_object.siblings_canada = sibling_canda;
+
         scoreBoard();
 
     });
@@ -1188,6 +1346,9 @@ $(document).ready( function() {
     $('.spouse-education').on('click',function () {
 
         $('.spouse-education-value').text($(this).val());
+
+        crs_calculate_object.spouse_edu = parseInt($(this).val());
+
         //scoreBoard();
         marriedChange();
 
@@ -1201,6 +1362,7 @@ $(document).ready( function() {
     $('.spouse-ex-canada').on('click',function () {
 
         $('.spouse-ex-canada-value').text($(this).val());
+        crs_calculate_object.spouse_work = parseInt($(this).val());
         //scoreBoard();
         marriedChange();
 
@@ -1214,6 +1376,9 @@ $(document).ready( function() {
         var value = $('input[name="group21"]:checked').val();
 
         $('.spouse-listening-value').text(value);
+
+        crs_calculate_object.spouse_ielts.listening = value;
+
        scoreBoard();
         marriedChange();
 
@@ -1228,6 +1393,8 @@ $(document).ready( function() {
         var value = $('input[name="group32"]:checked').val();
 
         $('.spouse-reading-value').text(value);
+
+        crs_calculate_object.spouse_ielts.reading = value;
         scoreBoard();
         marriedChange();
 
@@ -1240,6 +1407,8 @@ $(document).ready( function() {
         var value = $('input[name="group33"]:checked').val();
 
         $('.spouse-writing-value').text(value);
+
+        crs_calculate_object.ielts_value.writing = value;
         scoreBoard();
         marriedChange();
 
@@ -1251,6 +1420,8 @@ $(document).ready( function() {
 
         var value = $('input[name="group34"]:checked').val();
         $('.spouse-speaking-value').text(value);
+
+        crs_calculate_object.spouse_ielts.speaking = value;
         scoreBoard();
         marriedChange();
 
@@ -1311,12 +1482,15 @@ $(document).ready( function() {
 
                 if (education_for_c >= startpoint13 && education_for_c <= endpoints13){
                     $('.language-education').text(13);
+                    crs_calculate_object.language_edu = 13;
                 }
                 else if (education_for_c >= startpoint125 && education_for_c <= endpoints25){
                     $('.language-education').text(25);
+                    crs_calculate_object.language_edu = 25;
                 }
                 else{
                     $('.language-education').text(0);
+                    crs_calculate_object.language_edu = 0;
                 }
 
 
@@ -1327,12 +1501,15 @@ $(document).ready( function() {
 
                 if (education_for_c >= startpoint13 && education_for_c <= endpoints13){
                     $('.language-education').text(25);
+                    crs_calculate_object.language_edu = 25;
                 }
                 else if (education_for_c >= startpoint125 && education_for_c <= endpoints25){
                     $('.language-education').text(50);
+                    crs_calculate_object.language_edu = 50;
                 }
                 else{
                     $('.language-education').text(0);
+                    crs_calculate_object.language_edu = 0;
                 }
                 scoreBoard();
 
@@ -1343,6 +1520,7 @@ $(document).ready( function() {
         }
         else{
             $('.language-education').text(0);
+            crs_calculate_object.language_edu = 0;
         }
 
 
@@ -1386,12 +1564,14 @@ $(document).ready( function() {
             if (education_for_c >=startpoint13 && education_for_c <=endpoints13) {
 
 
-                $('.canada-ex-edu').text(13)
+                $('.canada-ex-edu').text(13);
+                crs_calculate_object.canada_work_ex_edu_level = 13;
 
             }
 
             else if (education_for_c >=startpoint125 && education_for_c <=endpoints25){
-                $('.canada-ex-edu').text(25)
+                $('.canada-ex-edu').text(25);
+                crs_calculate_object.canada_work_ex_edu_level = 25;
 
                 }
 
@@ -1401,13 +1581,15 @@ $(document).ready( function() {
     if (canada_value >=46 && canada_value<= 80){
 
         if (education_for_c >=startpoint13 && education_for_c <=endpoints13) {
-            $('.canada-ex-edu').text(25)
+            $('.canada-ex-edu').text(25);
+            crs_calculate_object.canada_work_ex_edu_level = 25;
 
 
         }
 
         else if (education_for_c >=startpoint125 && education_for_c <=endpoints25){
-            $('.canada-ex-edu').text(50)
+            $('.canada-ex-edu').text(50);
+            crs_calculate_object.canada_work_ex_edu_level = 50;
 
         }
 
@@ -1440,30 +1622,6 @@ scoreBoard();
 
 
     }
-/*
-    $('.married-status').on('click',function () {
-
-        var score = 0;
-
-        var current_score = parseInt($('#score').text());
-        var marr_sub = parseInt($('.spouse-subtotal').text());
-        console.log('fsdf'+current_score);
-      if ($(this).is(':checked')== true){
-
-
-          score = current_score + marr_sub;
-
-
-      }else{
-          score = current_score - marr_sub;
-      }
-
-      $('.score').text(score);
-
-    });*/
-
-
-    /*end married status change*/
 
 
     function scoreBoard(){
@@ -1488,6 +1646,8 @@ scoreBoard();
 
 
       $('.score').text(sum);
+
+      crs_calculate_object.total_sum = sum;
 
       $('.coreA .score-board').each(function () {
 
@@ -1515,9 +1675,120 @@ scoreBoard();
 
         $('.trans-sub').text(work_total);
 
+        console.log(crs_calculate_object);
+
+
+
+
+
+
 
 
   }
+
+  $('.proceed-button').on('click',function () {
+
+
+    var f_name = $('.first_name').val();
+
+    var l_name = $('.last_name').val();
+
+    var email = $('.email_client').val();
+
+    var phone = $('.phone_client').val();
+
+    if (f_name.length >0 && l_name.length > 0 && phone.length > 0){
+
+        crs_calculate_object.phone = '+88'+phone;
+        crs_calculate_object.name = f_name +' '+l_name;
+        crs_calculate_object.email = email;
+
+        $('.modal-get-client-name').modal('close');
+
+        console.log(crs_calculate_object.name);
+
+
+
+    }
+
+    $('.print-button').on('click',function () {
+
+
+        var count = 0;
+        var store = [];
+
+        for (var first_dimension in crs_calculate_object){
+
+            var dimension1 = crs_calculate_object[first_dimension];
+
+            if (typeof (dimension1) == "object"){
+
+
+                for (var second_dimension in dimension1){
+
+                    store[first_dimension+'_'+second_dimension] = dimension1[second_dimension];
+                }
+
+
+            }
+            else{
+                store[first_dimension] = dimension1;
+            }
+
+
+        }
+
+
+
+
+
+        var arr = [];
+        for (var i in store) {
+            if (store.hasOwnProperty(i)) {
+                arr.push([i, store[i]]);
+            }
+        }
+
+
+        console.log(arr);
+
+
+
+        $.ajax({
+            type: "POST",
+            url: 'process.php',
+            data: {"students" :arr},
+            cache: false,
+            success: function(result){
+                if ($.trim(result) === "done") {
+
+                    window.open('http://localhost/officeMain/express_calculator/printing_page.php', '_blank');
+
+                }else{
+                    alert(result);
+                }
+
+
+
+
+
+
+
+
+            }
+        });
+
+
+    });
+
+
+
+
+
+
+  });
+
+
 
 
 
